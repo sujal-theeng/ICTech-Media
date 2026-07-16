@@ -101,7 +101,7 @@ export default function ContactUs() {
                   </div>
                   <div>
                     <h3 className="text-[14px] font-semibold text-primary mb-1">Visit Us</h3>
-                    <p className="text-[16px] leading-[24px] text-text-muted">Kathmandu, Nepal</p>
+                    <a href="https://maps.google.com/?q=27.680185878643883,85.33423052999738" target="_blank" rel="noopener noreferrer" className="text-[16px] leading-[24px] text-text-muted hover:text-primary transition-colors duration-300">Kathmandu, Nepal</a>
                   </div>
                 </div>
                 <div className="flex items-start gap-5 group">
@@ -110,9 +110,10 @@ export default function ContactUs() {
                   </div>
                   <div>
                     <h3 className="text-[14px] font-semibold text-primary mb-1">Call Us</h3>
-                    <p className="text-[16px] leading-[24px] text-text-muted">
-                      +977 9761521785<br />+977 9804089157
-                    </p>
+                    <div className="text-[16px] leading-[24px] text-text-muted">
+                      <a href="tel:+9779761521785" className="block hover:text-primary transition-colors duration-300">+977 9761521785</a>
+                      <a href="tel:+9779804089157" className="block hover:text-primary transition-colors duration-300">+977 9804089157</a>
+                    </div>
                   </div>
                 </div>
                 <div className="flex items-start gap-5 group">
@@ -121,21 +122,31 @@ export default function ContactUs() {
                   </div>
                   <div>
                     <h3 className="text-[14px] font-semibold text-primary mb-1">Email Us</h3>
-                    <p className="text-[16px] leading-[24px] text-text-muted">admin@ictechmedia.com</p>
+                    <a href="mailto:admin@ictechmedia.com" className="text-[16px] leading-[24px] text-text-muted hover:text-primary transition-colors duration-300">admin@ictechmedia.com</a>
                   </div>
                 </div>
               </div>
             </div>
 
             {/* Map Card */}
-            <div className="bg-surface rounded-xl overflow-hidden h-[320px] relative shadow-sm border border-surface-variant">
-              <img
-                className="w-full h-full object-cover img-zoom"
-                alt="Map showing I C Tech Media office location in Kathmandu"
-                src="/images/contact-map.jpg"
+            <a
+              href="https://maps.google.com/?q=27.680185878643883,85.33423052999738"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block bg-surface rounded-xl overflow-hidden h-[320px] relative shadow-sm border border-surface-variant group"
+            >
+              <iframe
+                title="I C Tech Media Location"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=85.330%2C27.677%2C85.338%2C27.683&layer=mapnik&marker=27.680185878643883%2C85.33423052999738"
+                className="w-full h-full border-0"
                 loading="lazy"
               />
-            </div>
+              <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors duration-300 pointer-events-none" />
+              <div className="absolute bottom-4 left-4 bg-primary text-white px-4 py-2 rounded-lg text-[12px] font-semibold flex items-center gap-2 shadow-md pointer-events-none">
+                <span className="material-symbols-outlined text-[16px]">location_on</span>
+                Open in Google Maps
+              </div>
+            </a>
           </div>
 
           {/* Enquiry Form Column */}

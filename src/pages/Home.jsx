@@ -5,19 +5,19 @@ import { useInView } from '../hooks/useInView'
 
 const slides = [
   {
-    image: '/images/hero-bg-1.jpg',
+    image: 'https://images.unsplash.com/photo-1531482615713-2afd69097998?w=1920&q=80',
     label: 'Leading Tech Innovation in Nepal',
     title: 'Innovating the Future of Tech in Nepal',
     description: 'I C Tech Media is at the forefront of Nepal\'s tech scene, driving innovation through events, media, and cutting-edge solutions.',
   },
   {
-    image: '/images/hero-bg-2.jpg',
+    image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1920&q=80',
     label: 'Empowering Digital Transformation',
     title: 'Building Nepal\'s Tech Ecosystem',
     description: 'Through strategic partnerships and community-driven projects, we are shaping the future of technology in Nepal.',
   },
   {
-    image: '/images/hero-bg-3.jpg',
+    image: 'https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=1920&q=80',
     label: 'Join Our Community',
     title: 'Connecting Innovators Nationwide',
     description: 'Be part of a growing network of tech professionals, entrepreneurs, and innovators across Nepal.',
@@ -68,17 +68,14 @@ export default function Home() {
         <meta property="og:description" content="Driving innovation through events, media, and cutting-edge digital solutions in Nepal." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://ictechmedia.com" />
-        <meta property="og:image" content="/images/hero-bg-1.jpg" />
-        <meta property="og:site_name" content="I C Tech Media" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="I C Tech Media Pvt. Ltd." />
         <meta name="twitter:description" content="Driving innovation through events, media, and cutting-edge digital solutions in Nepal." />
-        <meta name="twitter:image" content="/images/hero-bg-1.jpg" />
         <link rel="canonical" href="https://ictechmedia.com" />
       </Helmet>
 
       {/* Hero Section */}
-      <section className="relative w-full h-[calc(100vh-80px)] overflow-hidden bg-deep-charcoal">
+      <section className="relative w-full h-[calc(100vh-80px)] overflow-hidden">
         {slides.map((slide, index) => (
           <div
             key={index}
@@ -86,14 +83,14 @@ export default function Home() {
               index === currentSlide ? 'opacity-100 z-10' : 'opacity-0 z-0'
             }`}
           >
-            <div
-              className="absolute inset-0 bg-cover bg-center transition-transform duration-[8000ms] ease-out"
-              style={{
-                backgroundImage: `url("${slide.image}")`,
-                transform: index === currentSlide ? 'scale(1)' : 'scale(1.08)',
-              }}
+            <img
+              src={slide.image}
+              alt={slide.title}
+              className="absolute inset-0 w-full h-full object-cover transition-transform duration-[8000ms] ease-out"
+              style={{ transform: index === currentSlide ? 'scale(1)' : 'scale(1.08)' }}
             />
-            <div className="absolute inset-0 bg-gradient-to-b from-deep-charcoal/50 via-deep-charcoal/30 to-deep-charcoal/70" />
+            <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70" />
+
             <div className="relative z-10 max-w-[1280px] mx-auto px-5 md:px-[64px] h-full flex flex-col justify-center">
               {index === currentSlide && (
                 <>
@@ -103,7 +100,7 @@ export default function Home() {
                   <h1 className="text-white text-[32px] md:text-[44px] leading-[40px] md:leading-[52px] font-extrabold tracking-tight max-w-3xl mb-5 hero-slide-up hero-delay-2">
                     {slide.title}
                   </h1>
-                  <p className="text-white/70 text-[16px] md:text-[18px] leading-[28px] max-w-2xl mb-10 hero-slide-up hero-delay-3">
+                  <p className="text-white/80 text-[16px] md:text-[18px] leading-[28px] max-w-2xl mb-10 hero-slide-up hero-delay-3">
                     {slide.description}
                   </p>
                   <div className="flex flex-wrap gap-4 hero-slide-up hero-delay-4">
@@ -158,9 +155,9 @@ export default function Home() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-[64px] items-center">
               <div className="relative group">
                 <img
-                  alt="Innovation and technology team in Nepal"
-                  className="w-full max-w-[480px] mx-auto rounded-xl shadow-xl object-cover h-[600px] img-zoom"
-                  src="/images/about-team.jpg"
+                  src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80"
+                  alt="I C Tech Media team collaborating"
+                  className="w-full max-w-[480px] mx-auto rounded-xl shadow-xl h-[400px] md:h-[500px] object-cover img-zoom"
                   loading="lazy"
                 />
                 <div className="absolute -bottom-8 -right-8 bg-primary text-white p-8 rounded-xl shadow-xl hidden md:block card-lift border-b-4 border-secondary">
@@ -216,19 +213,28 @@ export default function Home() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 stagger">
               {[
-                { icon: 'event', title: 'Event Management', desc: 'Organizing world-class tech summits and conferences that bring together innovators and industry leaders.' },
-                { icon: 'palette', title: 'Branding Solutions', desc: 'Crafting unique brand identities and digital marketing strategies that resonate with your target audience.' },
-                { icon: 'insights', title: 'Technology Consultation', desc: 'Providing expert advice on digital infrastructure and emerging technologies to optimize your business operations.' },
+                { icon: 'event', title: 'Event Management', desc: 'Organizing world-class tech summits and conferences that bring together innovators and industry leaders.', image: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&q=80' },
+                { icon: 'palette', title: 'Branding Solutions', desc: 'Crafting unique brand identities and digital marketing strategies that resonate with your target audience.', image: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&q=80' },
+                { icon: 'insights', title: 'Technology Consultation', desc: 'Providing expert advice on digital infrastructure and emerging technologies to optimize your business operations.', image: 'https://images.unsplash.com/photo-1553877522-43269d4ea984?w=600&q=80' },
+                { icon: 'code', title: 'Web Development', desc: 'Building modern, responsive websites and web applications tailored to your business needs using the latest technologies.', image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&q=80' },
+                { icon: 'videocam', title: 'Media Production', desc: 'Professional video production, content creation, and multimedia solutions for brands looking to tell their story.', image: 'https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=600&q=80' },
+                { icon: 'dns', title: 'IT Infrastructure', desc: 'End-to-end IT infrastructure setup, cloud migration, and network management for seamless business operations.', image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&q=80' },
               ].map((service) => (
-                <div key={service.title} className="reveal bg-surface rounded-xl p-10 border border-surface-container card-lift group flex flex-col h-full">
-                  <div className="w-16 h-16 bg-secondary-container rounded-xl flex items-center justify-center mb-8 transition-all duration-300 group-hover:bg-primary group-hover:scale-110">
-                    <span className="material-symbols-outlined text-[32px] text-primary transition-colors duration-300 group-hover:text-secondary">{service.icon}</span>
+                <div key={service.title} className="reveal bg-surface rounded-xl overflow-hidden border border-surface-container card-lift group flex flex-col h-full">
+                  <div className="aspect-[1.6] overflow-hidden relative">
+                    <img src={service.image} alt={service.title} className="w-full h-full object-cover img-zoom" loading="lazy" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                    <div className="absolute bottom-4 left-4 w-12 h-12 bg-secondary rounded-lg flex items-center justify-center transition-all duration-300 group-hover:bg-primary group-hover:scale-110">
+                      <span className="material-symbols-outlined text-[24px] text-deep-charcoal transition-colors duration-300 group-hover:text-secondary">{service.icon}</span>
+                    </div>
                   </div>
-                  <h3 className="text-deep-charcoal text-[22px] font-bold mb-4 transition-colors duration-300 group-hover:text-primary">{service.title}</h3>
-                  <p className="text-text-muted text-[16px] leading-[24px] mb-8 flex-grow">{service.desc}</p>
-                  <a className="text-primary text-[14px] font-semibold flex items-center gap-2 transition-all duration-300 group-hover:gap-3 mt-auto" href="#">
-                    Read More <span className="material-symbols-outlined text-[18px] transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
-                  </a>
+                  <div className="p-8 flex flex-col flex-grow">
+                    <h3 className="text-deep-charcoal text-[22px] font-bold mb-4 transition-colors duration-300 group-hover:text-primary">{service.title}</h3>
+                    <p className="text-text-muted text-[16px] leading-[24px] mb-8 flex-grow">{service.desc}</p>
+                    <Link to="/services" className="text-primary text-[14px] font-semibold flex items-center gap-2 transition-all duration-300 group-hover:gap-3 mt-auto">
+                      Read More <span className="material-symbols-outlined text-[18px] transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
+                    </Link>
+                  </div>
                 </div>
               ))}
             </div>
@@ -262,30 +268,27 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 stagger">
               {[
                 {
-                  image: '/images/news-1.jpg',
-                  alt: 'Tech conference in Nepal',
+                  image: 'https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=600&q=80',
                   date: '15 Feb 2025',
                   category: 'Events',
                   title: 'Digital Nepal Summit 2025: Key Takeaways',
                 },
                 {
-                  image: '/images/ict-award-ceremony.jpg',
-                  alt: 'Software developers collaborating',
+                  image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&q=80',
                   date: '02 Feb 2025',
                   category: 'Community',
                   title: "Community Coding Bootcamps: Empowering Nepal's Youth",
                 },
                 {
-                  image: '/images/news-3.jpg',
-                  alt: 'Strategic planning session',
+                  image: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=600&q=80',
                   date: '28 Jan 2025',
                   category: 'Consultation',
                   title: "The Future of AI in Nepal's Emerging Tech Economy",
                 },
               ].map((article) => (
                 <article key={article.title} className="reveal bg-surface rounded-xl overflow-hidden card-lift border border-surface-container group">
-                  <div className="aspect-[1.33] overflow-hidden relative border-b-4 border-secondary">
-                    <img alt={article.alt} className="w-full h-full object-cover img-zoom" src={article.image} loading="lazy" />
+                  <div className="aspect-[1.33] relative overflow-hidden border-b-4 border-secondary">
+                    <img src={article.image} alt={article.title} className="w-full h-full object-cover img-zoom" loading="lazy" />
                   </div>
                   <div className="p-8">
                     <div className="flex items-center gap-6 text-text-muted text-[12px] font-medium mb-4 uppercase tracking-wider">

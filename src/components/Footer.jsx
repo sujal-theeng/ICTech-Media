@@ -88,8 +88,10 @@ export default function Footer() {
           <h4 className="text-[20px] font-bold mb-6 text-white">Contact Info</h4>
           <ul className="space-y-6">
             <li className="flex items-start gap-4">
-              <span className="material-symbols-outlined text-secondary">location_on</span>
-              <span className="text-white/60 text-[16px]">Shankhamul, Kathmandu, Nepal</span>
+              <a href="https://maps.google.com/?q=27.680185878643883,85.33423052999738" target="_blank" rel="noopener noreferrer" className="flex items-start gap-4 w-full group">
+                <span className="material-symbols-outlined text-secondary transition-transform duration-300 group-hover:scale-110">location_on</span>
+                <span className="text-white/60 text-[16px] hover:text-secondary transition-colors duration-300">Shankhamul, Kathmandu, Nepal</span>
+              </a>
             </li>
             <li className="flex items-start gap-4">
               <span className="material-symbols-outlined text-secondary">mail</span>

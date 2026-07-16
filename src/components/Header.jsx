@@ -35,20 +35,20 @@ export default function Header() {
       <div className="bg-deep-charcoal text-white py-2 hidden md:block border-b-4 border-secondary">
         <div className="max-w-[1280px] mx-auto px-[64px] flex justify-between items-center text-[12px] tracking-wide">
           <div className="flex items-center gap-6">
-            <span className="flex items-center gap-2 hover-underline">
+            <a href="mailto:admin@ictechmedia.com" className="flex items-center gap-2 hover-underline hover:text-secondary transition-colors duration-300">
               <span className="material-symbols-outlined text-[16px] text-secondary">mail</span>
               admin@ictechmedia.com
-            </span>
-            <span className="flex items-center gap-2 hover-underline">
+            </a>
+            <a href="tel:+9779804089157" className="flex items-center gap-2 hover-underline hover:text-secondary transition-colors duration-300">
               <span className="material-symbols-outlined text-[16px] text-secondary">call</span>
               +977 9804089157
-            </span>
+            </a>
           </div>
           <div className="flex items-center gap-4">
-            <span className="flex items-center gap-1.5 hover:text-secondary transition-colors duration-300">
+            <a href="https://maps.google.com/?q=27.680185878643883,85.33423052999738" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 hover:text-secondary transition-colors duration-300">
               <span className="material-symbols-outlined text-[16px]">location_on</span>
               Shankhamul, Kathmandu
-            </span>
+            </a>
           </div>
         </div>
       </div>

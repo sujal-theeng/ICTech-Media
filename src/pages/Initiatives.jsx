@@ -8,8 +8,7 @@ const initiatives = [
     title: 'Digital Nepal Summit',
     description: 'Bringing together policymakers, tech leaders, and innovators to discuss the roadmap for a digitally empowered Nepal.',
     cta: 'View Highlights',
-    image: '/images/ict-award-audience.jpg',
-    alt: 'Digital Nepal Summit audience',
+    image: 'https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=600&q=80',
   },
   {
     icon: 'lightbulb',
@@ -17,8 +16,7 @@ const initiatives = [
     title: 'Startup & Idea Fest',
     description: 'A dynamic platform for budding entrepreneurs to pitch ideas, showcase products, and connect with potential investors.',
     cta: 'Register Now',
-    image: '/images/initiative-startup.jpg',
-    alt: 'Startup exhibition floor',
+    image: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=600&q=80',
   },
   {
     icon: 'terminal',
@@ -26,17 +24,15 @@ const initiatives = [
     title: 'Community Coding Bootcamps',
     description: 'Intensive, hands-on training sessions aimed at bridging the digital divide and providing modern skills to local communities.',
     cta: 'Join Next Batch',
-    image: '/images/initiative-bootcamp.jpg',
-    alt: 'Collaborative coding session',
+    image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&q=80',
   },
   {
     icon: 'military_tech',
     category: 'Recognition',
     title: 'I C Tech Awards',
-    description: 'Celebrating the best in tech—from software innovations to impactful IT services that are changing the digital landscape.',
+    description: 'Celebrating the best in tech\u2014from software innovations to impactful IT services that are changing the digital landscape.',
     cta: 'Nominate Now',
-    image: '/images/ict-award-winners.jpg',
-    alt: 'ICT Award 2024 winners',
+    image: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&q=80',
   },
 ]
 
@@ -63,7 +59,6 @@ export default function Initiatives() {
         <meta property="og:description" content="Summits, startup events, coding bootcamps, and tech awards driving Nepal's digital transformation." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://ictechmedia.com/initiatives" />
-        <meta property="og:image" content="/images/initiative-hero.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Initiatives - I C Tech Media" />
         <meta name="twitter:description" content="Tech events and programs driving Nepal's digital transformation." />
@@ -75,11 +70,12 @@ export default function Initiatives() {
         <section className="relative w-full h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img
-              alt="Hero Background"
-              className="w-full h-full object-cover object-center brightness-50 img-zoom"
-              src="/images/initiative-hero.jpg"
+              src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1920&q=80"
+              alt="Tech conference audience"
+              className="w-full h-full object-cover"
+              loading="lazy"
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-primary/40" />
           </div>
 
           <div className="relative z-10 w-full px-5 md:px-[64px] max-w-[1280px] mx-auto text-center md:text-left">
@@ -108,21 +104,21 @@ export default function Initiatives() {
 
         {/* Impact Statistics */}
         <SectionReveal>
-          <section className="w-full bg-surface-gray py-24 border-y border-surface-variant/30">
+          <section className="w-full bg-surface-gray py-16 border-y border-surface-variant/30">
             <div className="px-5 md:px-[64px] max-w-[1280px] mx-auto">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center divide-y md:divide-y-0 md:divide-x divide-surface-variant/50 stagger">
-                <div className="reveal flex flex-col items-center justify-center pt-8 md:pt-0">
-                  <span className="material-symbols-outlined text-primary text-5xl mb-4 transition-transform duration-300 hover:scale-110">rocket_launch</span>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center divide-y md:divide-y-0 md:divide-x divide-surface-variant/50">
+                <div className="flex flex-col items-center justify-center pt-8 md:pt-0">
+                  <span className="material-symbols-outlined text-primary text-5xl mb-4">rocket_launch</span>
                   <h3 className="text-[48px] leading-[56px] font-extrabold text-deep-charcoal mb-2">25+</h3>
                   <p className="text-[14px] font-semibold text-text-muted uppercase tracking-wider">Startup Showcases</p>
                 </div>
-                <div className="reveal flex flex-col items-center justify-center pt-8 md:pt-0">
-                  <span className="material-symbols-outlined text-primary text-5xl mb-4 transition-transform duration-300 hover:scale-110">code</span>
+                <div className="flex flex-col items-center justify-center pt-8 md:pt-0">
+                  <span className="material-symbols-outlined text-primary text-5xl mb-4">code</span>
                   <h3 className="text-[48px] leading-[56px] font-extrabold text-deep-charcoal mb-2">5k+</h3>
                   <p className="text-[14px] font-semibold text-text-muted uppercase tracking-wider">Developers Trained</p>
                 </div>
-                <div className="reveal flex flex-col items-center justify-center pt-8 md:pt-0">
-                  <span className="material-symbols-outlined text-primary text-5xl mb-4 transition-transform duration-300 hover:scale-110">workspace_premium</span>
+                <div className="flex flex-col items-center justify-center pt-8 md:pt-0">
+                  <span className="material-symbols-outlined text-primary text-5xl mb-4">workspace_premium</span>
                   <h3 className="text-[48px] leading-[56px] font-extrabold text-deep-charcoal mb-2">100+</h3>
                   <p className="text-[14px] font-semibold text-text-muted uppercase tracking-wider">Awards Presented</p>
                 </div>
@@ -133,9 +129,9 @@ export default function Initiatives() {
 
         {/* Featured Initiatives Grid */}
         <SectionReveal delay={100}>
-          <section className="w-full py-24 bg-surface" id="initiatives">
+          <section className="w-full py-16 bg-surface" id="initiatives">
             <div className="px-5 md:px-[64px] max-w-[1280px] mx-auto">
-              <div className="text-center max-w-3xl mx-auto mb-16">
+              <div className="text-center max-w-3xl mx-auto mb-10">
                 <h2 className="text-[32px] leading-[40px] font-bold text-deep-charcoal mb-6">Key Initiatives</h2>
                 <p className="text-[18px] leading-[28px] text-text-muted">
                   We organize and support high-impact programs that drive the digital transformation of Nepal and celebrate technological excellence.
@@ -146,13 +142,9 @@ export default function Initiatives() {
                 {initiatives.map((item) => (
                   <div key={item.title} className="reveal group bg-surface rounded-xl overflow-hidden border border-surface-variant card-lift flex flex-col md:flex-row relative">
                     <div className="absolute top-4 left-8 w-10 h-1 bg-secondary rounded-full z-10 transition-all duration-500 group-hover:w-16"></div>
-                    <div className="w-full md:w-2/5 h-64 md:h-auto overflow-hidden">
-                      <img
-                        alt={item.alt}
-                        className="w-full h-full object-cover img-zoom"
-                        src={item.image}
-                        loading="lazy"
-                      />
+                    <div className="w-full md:w-2/5 h-64 md:h-auto overflow-hidden relative">
+                      <img src={item.image} alt={item.title} className="w-full h-full object-cover img-zoom" loading="lazy" />
+                      <div className="absolute inset-0 bg-gradient-to-r from-black/30 to-transparent" />
                     </div>
                     <div className="w-full md:w-3/5 p-8 flex flex-col justify-between">
                       <div>
@@ -177,26 +169,29 @@ export default function Initiatives() {
 
         {/* Call to Action */}
         <SectionReveal delay={200}>
-          <section className="w-full bg-surface-gray py-24 relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
-            <div className="absolute bottom-0 left-0 w-96 h-96 bg-secondary/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2"></div>
-
-            <div className="px-5 md:px-[64px] max-w-[1280px] mx-auto relative z-10 text-center">
-              <span className="material-symbols-outlined text-primary text-5xl mb-6 transition-transform duration-300 hover:scale-110">ads_click</span>
-              <h2 className="text-[48px] leading-[56px] font-extrabold text-deep-charcoal mb-6 max-w-2xl mx-auto tracking-tight">Be Part of the Digital Revolution</h2>
-              <p className="text-[18px] leading-[28px] text-text-muted mb-10 max-w-2xl mx-auto">
+          <section className="w-full relative overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&q=80"
+              alt="Team collaboration"
+              className="w-full h-[400px] object-cover"
+              loading="lazy"
+            />
+            <div className="absolute inset-0 bg-primary/85 flex flex-col items-center justify-center text-center p-8">
+              <span className="material-symbols-outlined text-secondary text-5xl mb-6 transition-transform duration-300 hover:scale-110">ads_click</span>
+              <h2 className="text-[48px] leading-[56px] font-extrabold text-white mb-6 max-w-2xl mx-auto tracking-tight">Be Part of the Digital Revolution</h2>
+              <p className="text-[18px] leading-[28px] text-white/90 mb-10 max-w-2xl mx-auto">
                 Whether you're a student, professional, or corporate partner, there's a place for you in our tech ecosystem. Let's build a smarter future together.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
                   href="#"
-                  className="bg-primary text-white px-8 py-4 rounded-lg text-[14px] font-semibold btn-press shadow-lg text-center"
+                  className="bg-secondary text-primary px-8 py-4 rounded-lg text-[14px] font-semibold btn-press shadow-lg text-center"
                 >
                   Partner With Us
                 </a>
                 <a
                   href="#"
-                  className="bg-transparent border-2 border-primary text-primary px-8 py-4 rounded-lg text-[14px] font-semibold btn-press text-center flex items-center justify-center gap-2"
+                  className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg text-[14px] font-semibold btn-press text-center flex items-center justify-center gap-2 hover:bg-white hover:text-primary"
                 >
                   Upcoming Events
                   <span className="material-symbols-outlined text-[20px]">calendar_month</span>
