@@ -1,0 +1,28 @@
+{
+  "name": "I C Tech Media Pvt. Ltd.",
+  "short_name": "IC Tech Media",
+  "description": "Leading innovation and excellence in Nepal's technology and media landscape through comprehensive digital solutions.",
+  "theme_color": "#0047b3",
+  "background_color": "#fff8f9",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/LOGO ic tech.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/LOGO ic tech.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "technology", "news"],
+  "lang": "en",
+  "dir": "ltr"
+}

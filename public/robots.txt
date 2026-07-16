@@ -1,0 +1,10 @@
+# robots.txt for I C Tech Media
+User-agent: *
+Allow: /
+
+# Disallow admin areas
+Disallow: /api/
+Disallow: /admin/
+
+# Sitemap location
+Sitemap: https://ictechmedia.com/sitemap.xml
