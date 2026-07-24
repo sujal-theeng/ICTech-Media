@@ -1,57 +1,6 @@
 import { Helmet } from 'react-helmet-async'
 import { useInView } from '../hooks/useInView'
 
-const teamMembers = [
-  {
-    name: 'Rajesh Sharma',
-    role: 'Managing Director',
-    bio: 'With 25 years of industry tenure, Rajesh leads the strategic vision for Nepal\'s digital media landscape.',
-    image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80',
-  },
-  {
-    name: 'Anjali Gurung',
-    role: 'Chief Tech Editor',
-    bio: 'Leading the tech desk with a focus on emerging local startups and global hardware trends.',
-    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80',
-  },
-  {
-    name: 'Nischal Bhatta',
-    role: 'Innovation Lead',
-    bio: 'Bridging the gap between traditional media and new-age tech platforms for our partners.',
-    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80',
-  },
-  {
-    name: 'Priya Thapa',
-    role: 'Community Lead',
-    bio: 'Managing our extensive network of tech professionals and media contributors across Nepal.',
-    image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80',
-  },
-  {
-    name: 'Suman Karki',
-    role: 'Head of Digital Marketing',
-    bio: 'Driving growth through data-driven campaigns and innovative digital strategies across platforms.',
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80',
-  },
-  {
-    name: 'Ritu Magar',
-    role: 'Event Coordinator',
-    bio: 'Orchestrating large-scale tech events and ensuring seamless execution from concept to completion.',
-    image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&q=80',
-  },
-  {
-    name: 'Deepak Rai',
-    role: 'Lead Developer',
-    bio: 'Building scalable web and mobile solutions with a passion for clean code and modern architecture.',
-    image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&q=80',
-  },
-  {
-    name: 'Sita Limbu',
-    role: 'Content Strategist',
-    bio: 'Crafting compelling narratives and content strategies that amplify brand voices across channels.',
-    image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&q=80',
-  },
-]
-
 const achievements = [
   { icon: 'history', number: '25+', label: 'Years in Industry' },
   { icon: 'newspaper', number: '10k+', label: 'Articles Published' },
@@ -77,9 +26,9 @@ export default function AboutUs() {
     <>
       <Helmet>
         <title>About Us - I C Tech Media Pvt. Ltd.</title>
-        <meta name="description" content="Learn about I C Tech Media's 25+ years of experience in Nepal's technology and media landscape. Meet our team and discover our mission." />
+        <meta name="description" content="Learn about I C Tech Media's 25+ years of experience in Nepal's technology and media landscape." />
         <meta property="og:title" content="About Us - I C Tech Media" />
-        <meta property="og:description" content="25+ years of pioneering tech media excellence in Nepal. Meet our team and discover our mission." />
+        <meta property="og:description" content="25+ years of pioneering tech media excellence in Nepal." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://ictechmedia.com/about" />
         <meta name="twitter:card" content="summary_large_image" />
@@ -92,12 +41,12 @@ export default function AboutUs() {
       <section className="bg-surface-gray py-24 md:py-32">
         <div className="max-w-[1280px] mx-auto px-5 md:px-[64px] grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
           <div className="flex flex-col gap-6">
-            <span className="text-[14px] font-semibold text-primary uppercase tracking-[0.2em]">Our Legacy</span>
-            <h1 className="text-[36px] md:text-[48px] leading-[44px] md:leading-[56px] font-extrabold text-deep-charcoal tracking-tight">
-              Pioneering Tech Media in Nepal.
+            <h1 className="text-[32px] leading-[44px] md:leading-[56px] font-extrabold text-deep-charcoal tracking-tight">
+              About I C Tech Media Pvt. Ltd.
             </h1>
-            <p className="text-[18px] leading-[28px] text-text-muted max-w-lg">
-              I C Tech Media brings over 25 years of specialized experience in the media and tech industry, bridging the gap between innovation and information for a digital-first Nepal.
+            <span className="text-[14px] font-semibold text-primary uppercase tracking-[0.2em]" style={{ textAlign: 'left' }}>Building an e-Society | Empowering Innovation | Driving Digital Transformation</span>
+            <p className="text-[18px] leading-[28px] text-text-muted max-w-lg" style={{ textAlign: 'justify' }}>
+              Established in 2069 BS, I C Tech Media Pvt. Ltd. is Nepal's premier technology media, event management, and digital consultancy hub. Driven by a passion to foster entrepreneurship and bridge the gap between technology and society, we create dynamic platforms for academicians, industry professionals, startups, and students to collaborate, share knowledge, and shape the nation's digital ecosystem.
             </p>
           </div>
           <div className="relative h-[400px] w-full rounded-xl overflow-hidden shadow-lg group">
@@ -110,7 +59,7 @@ export default function AboutUs() {
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
             <div className="absolute bottom-6 left-6 text-white">
               <span className="text-[14px] font-medium uppercase tracking-widest block mb-1">Established</span>
-              <span className="text-[36px] font-extrabold">2000</span>
+              <span className="text-[36px] font-extrabold">2069 BS</span>
             </div>
           </div>
         </div>
@@ -120,35 +69,17 @@ export default function AboutUs() {
       <SectionReveal>
         <section className="py-16 md:py-20 bg-background">
           <div className="px-5 md:px-[64px] max-w-[1280px] mx-auto">
-            <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
-              <div className="max-w-2xl">
-                <h2 className="text-[32px] leading-[40px] font-bold text-deep-charcoal mb-4">Our Foundation</h2>
-                <p className="text-[18px] leading-[28px] text-text-muted">
-                  Built on decades of industry leadership and a relentless pursuit of technological excellence.
-                </p>
-              </div>
+            {/* Our Journey */}
+            <div className="mb-16">
+              <span className="text-primary text-[14px] font-semibold uppercase tracking-[0.2em] mb-4 block">Our Journey & Evolution</span>
+              <p className="text-[18px] leading-[28px] text-text-muted" style={{ textAlign: 'left' }}>
+                What began as a grassroots initiative by dedicated technophiles has evolved into a powerhouse driving Nepal's tech revolution. In our early days, we pioneered multi-channel tech journalism through Living with ICT, spanning print (monthly magazine), radio (weekly FM program), and digital media (e-paper and web portal). Today, I C Tech Media goes beyond reporting on technology; we actively build it through strategic consultation, large-scale event management, media production, and nationwide ecosystem-building initiatives.
+              </p>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 stagger mb-10">
-              {/* Mission Card */}
-              <div className="reveal group bg-surface rounded-xl overflow-hidden border border-surface-variant card-lift flex flex-col relative">
-                <div className="aspect-[1.8] overflow-hidden relative">
-                  <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&q=80" alt="Mission" className="w-full h-full object-cover img-zoom" loading="lazy" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                  <div className="absolute bottom-4 left-4">
-                    <span className="text-[12px] font-semibold uppercase tracking-widest text-secondary">Mission</span>
-                  </div>
-                </div>
-                <div className="p-8 flex flex-col gap-4">
-                  <h3 className="text-[28px] leading-[36px] font-bold text-deep-charcoal transition-colors duration-300 group-hover:text-primary">Empowering Ecosystems</h3>
-                  <p className="text-[16px] leading-[24px] text-text-muted">
-                    To empower Nepal's tech ecosystem through excellence in media and innovation. We provide the tools, insights, and platforms necessary for progress.
-                  </p>
-                </div>
-              </div>
-
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-16">
               {/* Vision Card */}
-              <div className="reveal group bg-surface rounded-xl overflow-hidden border border-surface-variant card-lift flex flex-col relative">
+              <div className="group bg-surface rounded-xl overflow-hidden border border-surface-variant card-lift flex flex-col relative">
                 <div className="aspect-[1.8] overflow-hidden relative">
                   <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&q=80" alt="Vision" className="w-full h-full object-cover img-zoom" loading="lazy" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
@@ -157,100 +88,69 @@ export default function AboutUs() {
                   </div>
                 </div>
                 <div className="p-8 flex flex-col gap-4">
-                  <h3 className="text-[28px] leading-[36px] font-bold text-deep-charcoal transition-colors duration-300 group-hover:text-primary">A Tech-First Nation</h3>
-                  <p className="text-[16px] leading-[24px] text-text-muted">
-                    To be the primary catalyst for Nepal's digital transformation, fostering a society where technology drives sustainable growth and social equity.
+                  <h3 className="text-[28px] leading-[36px] font-bold text-deep-charcoal transition-colors duration-300 group-hover:text-primary" style={{ textAlign: 'left' }}>Building an Inclusive e-Society</h3>
+                  <p className="text-[16px] leading-[24px] text-text-muted" style={{ textAlign: 'left' }}>
+                    To be the primary catalyst in building an inclusive "e-Society" in Nepal by leading the digital transformation, nurturing tech innovation, and positioning Nepal's ICT sector on the global stage.
                   </p>
                 </div>
               </div>
 
-              {/* Values Card */}
-              <div className="reveal group bg-surface rounded-xl overflow-hidden border border-surface-variant card-lift flex flex-col relative">
+              {/* Mission Card */}
+              <div className="group bg-surface rounded-xl overflow-hidden border border-surface-variant card-lift flex flex-col relative">
                 <div className="aspect-[1.8] overflow-hidden relative">
-                  <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=600&q=80" alt="Core Values" className="w-full h-full object-cover img-zoom" loading="lazy" />
+                  <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&q=80" alt="Mission" className="w-full h-full object-cover img-zoom" loading="lazy" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                   <div className="absolute bottom-4 left-4">
-                    <span className="text-[12px] font-semibold uppercase tracking-widest text-secondary">Core Values</span>
+                    <span className="text-[12px] font-semibold uppercase tracking-widest text-secondary">Mission</span>
                   </div>
                 </div>
                 <div className="p-8 flex flex-col gap-4">
-                  <h3 className="text-[28px] leading-[36px] font-bold text-deep-charcoal transition-colors duration-300 group-hover:text-primary">The IC Way</h3>
-                  <ul className="text-[16px] leading-[24px] text-text-muted flex flex-col gap-2 list-disc list-inside">
-                    <li className="transition-colors duration-300 hover:text-primary">Uncompromising Integrity</li>
-                    <li className="transition-colors duration-300 hover:text-primary">Media Excellence</li>
-                    <li className="transition-colors duration-300 hover:text-primary">Continuous Innovation</li>
-                    <li className="transition-colors duration-300 hover:text-primary">Community Empowerment</li>
-                  </ul>
+                  <h3 className="text-[28px] leading-[36px] font-bold text-deep-charcoal transition-colors duration-300 group-hover:text-primary" style={{ textAlign: 'left' }}>Empowering Through Media & Technology</h3>
+                  <p className="text-[16px] leading-[24px] text-text-muted" style={{ textAlign: 'left' }}>
+                    To empower individuals, startups, and organizations by providing tech media coverage, prestigious recognition platforms, impactful events, and end-to-end media and technology consultation services that foster collaboration, growth, and digital adoption across all levels of society.
+                  </p>
                 </div>
               </div>
             </div>
 
-            {/* Leadership Team */}
-            <div className="mt-12">
-              <div className="text-center mb-8">
-                <span className="text-primary text-[14px] font-semibold uppercase tracking-[0.2em] mb-4 block">Leadership</span>
-                <h3 className="text-[28px] leading-[36px] font-bold text-deep-charcoal">Meet Our Team</h3>
-              </div>
-
-              {/* Team Lead */}
-              <div className="flex flex-col md:flex-row gap-8 items-center bg-surface rounded-xl p-8 border border-surface-variant mb-6">
-                <div className="w-full md:w-1/3 aspect-square relative overflow-hidden rounded-xl">
-                  <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80" alt="Rajesh Sharma" className="w-full h-full object-cover" loading="lazy" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-                  <div className="absolute bottom-0 left-0 right-0 p-4">
-                    <span className="bg-secondary text-deep-charcoal text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">Managing Director</span>
+            {/* Core Objectives */}
+            <div className="mb-16">
+              <span className="text-primary text-[14px] font-semibold uppercase tracking-[0.2em] mb-4 block">Core Objectives</span>
+              <h2 className="text-[32px] leading-[40px] font-bold text-deep-charcoal mb-8">Our Strategic Pillars</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="flex gap-4 group">
+                  <span className="material-symbols-outlined text-primary text-[32px] transition-transform duration-300 group-hover:scale-110">emoji_events</span>
+                  <div>
+                    <h4 className="text-deep-charcoal text-[20px] font-bold mb-2 group-hover:text-primary transition-colors duration-300">Recognize & Honor Innovation</h4>
+                    <p className="text-text-muted text-[16px]">Acknowledge and celebrate outstanding achievements in the tech sector through national platforms like the annual ICT Award.</p>
                   </div>
                 </div>
-                <div className="w-full md:w-2/3">
-                  <h4 className="text-[28px] font-bold text-deep-charcoal mb-1">Rajesh Sharma</h4>
-                  <p className="text-[14px] font-semibold text-primary mb-4">Managing Director</p>
-                  <p className="text-[16px] leading-[28px] text-text-muted">
-                    With 25 years of industry tenure, Rajesh leads the strategic vision for Nepal's digital media landscape. Under his leadership, I C Tech Media has grown from a small publication into Nepal's most trusted technology media house. He believes in the power of technology to transform lives and is committed to putting Nepal on the global tech map.
-                  </p>
-                </div>
-              </div>
-
-              {/* Other 3 Members */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="bg-surface rounded-xl overflow-hidden border border-surface-variant group">
-                  <div className="aspect-[1.2] overflow-hidden relative">
-                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80" alt="Anjali Gurung" className="w-full h-full object-cover img-zoom" loading="lazy" />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-                    <div className="absolute bottom-0 left-0 right-0 p-4">
-                      <span className="bg-secondary text-deep-charcoal text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider">Chief Tech Editor</span>
-                    </div>
-                  </div>
-                  <div className="p-5">
-                    <h4 className="text-[20px] font-bold text-deep-charcoal mb-1 group-hover:text-primary transition-colors">Anjali Gurung</h4>
-                    <p className="text-[14px] text-text-muted leading-[22px]">Leading the tech desk with a focus on emerging local startups and global hardware trends.</p>
+                <div className="flex gap-4 group">
+                  <span className="material-symbols-outlined text-primary text-[32px] transition-transform duration-300 group-hover:scale-110">rocket_launch</span>
+                  <div>
+                    <h4 className="text-deep-charcoal text-[20px] font-bold mb-2 group-hover:text-primary transition-colors duration-300">Foster Entrepreneurship</h4>
+                    <p className="text-text-muted text-[16px]">Drive youth innovation and regional investment by connecting startups, students, and investors through initiatives like the Startup & Idea Fest.</p>
                   </div>
                 </div>
-
-                <div className="bg-surface rounded-xl overflow-hidden border border-surface-variant group">
-                  <div className="aspect-[1.2] overflow-hidden relative">
-                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80" alt="Nischal Bhatta" className="w-full h-full object-cover img-zoom" loading="lazy" />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-                    <div className="absolute bottom-0 left-0 right-0 p-4">
-                      <span className="bg-secondary text-deep-charcoal text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider">Innovation Lead</span>
-                    </div>
-                  </div>
-                  <div className="p-5">
-                    <h4 className="text-[20px] font-bold text-deep-charcoal mb-1 group-hover:text-primary transition-colors">Nischal Bhatta</h4>
-                    <p className="text-[14px] text-text-muted leading-[22px]">Bridging the gap between traditional media and new-age tech platforms for our partners.</p>
+                <div className="flex gap-4 group">
+                  <span className="material-symbols-outlined text-primary text-[32px] transition-transform duration-300 group-hover:scale-110">school</span>
+                  <div>
+                    <h4 className="text-deep-charcoal text-[20px] font-bold mb-2 group-hover:text-primary transition-colors duration-300">Promote Tech Literacy & Awareness</h4>
+                    <p className="text-text-muted text-[16px]">Educate and inform the public on emerging digital trends, ICT policies, and developments through multi-channel journalism under Living with ICT (Print, Digital, and Broadcast).</p>
                   </div>
                 </div>
-
-                <div className="bg-surface rounded-xl overflow-hidden border border-surface-variant group">
-                  <div className="aspect-[1.2] overflow-hidden relative">
-                    <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80" alt="Priya Thapa" className="w-full h-full object-cover img-zoom" loading="lazy" />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-                    <div className="absolute bottom-0 left-0 right-0 p-4">
-                      <span className="bg-secondary text-deep-charcoal text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider">Community Lead</span>
-                    </div>
+                <div className="flex gap-4 group">
+                  <span className="material-symbols-outlined text-primary text-[32px] transition-transform duration-300 group-hover:scale-110">diversity_3</span>
+                  <div>
+                    <h4 className="text-deep-charcoal text-[20px] font-bold mb-2 group-hover:text-primary transition-colors duration-300">Bridge the Digital Divide</h4>
+                    <p className="text-text-muted text-[16px]">Promote digital inclusion and diversity through targeted capacity-building initiatives and provincial outreach programs.</p>
                   </div>
-                  <div className="p-5">
-                    <h4 className="text-[20px] font-bold text-deep-charcoal mb-1 group-hover:text-primary transition-colors">Priya Thapa</h4>
-                    <p className="text-[14px] text-text-muted leading-[22px]">Managing our extensive network of tech professionals and media contributors across Nepal.</p>
+                </div>
+                <div className="flex gap-4 group md:col-span-2">
+                  <span className="material-symbols-outlined text-primary text-[32px] transition-transform duration-300 group-hover:scale-110">campaign</span>
+                  <div>
+                    <h4 className="text-deep-charcoal text-[20px] font-bold mb-2 group-hover:text-primary transition-colors duration-300">Deliver High-Impact Media & Event Services</h4>
+                    <p className="text-text-muted text-[16px]">Provide top-tier corporate event management, digital marketing, broadcasting, and tech consultation to help institutions and businesses thrive in the digital age.</p>
                   </div>
                 </div>
               </div>
@@ -261,7 +161,7 @@ export default function AboutUs() {
               <div>
                 <span className="text-primary text-[14px] font-semibold uppercase tracking-[0.2em] mb-4 block">Our Story</span>
                 <h3 className="text-[28px] leading-[36px] font-bold text-deep-charcoal mb-6">From a Vision to Nepal's Leading Tech Media Platform</h3>
-                <div className="space-y-4 text-[16px] leading-[28px] text-text-muted">
+                <div className="space-y-4 text-[16px] leading-[28px] text-text-muted" style={{ textAlign: 'justify' }}>
                   <p>
                     Founded in 2000, I C Tech Media started as a small team of passionate technologists and journalists with a shared dream: to put Nepal on the global tech map. What began as a modest publication has grown into Nepal's most trusted technology media house.
                   </p>
@@ -307,62 +207,20 @@ export default function AboutUs() {
         </section>
       </SectionReveal>
 
-      {/* Team Section */}
-      <SectionReveal delay={100}>
-        <section className="py-24 md:py-32 bg-surface-gray border-t border-surface-variant">
-          <div className="max-w-[1280px] mx-auto px-5 md:px-[64px]">
-            <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
-              <div className="max-w-2xl">
-                <h2 className="text-[32px] leading-[40px] font-bold text-deep-charcoal mb-4">The Minds Behind IC</h2>
-                <p className="text-[18px] leading-[28px] text-text-muted">
-                  A multidisciplinary team of journalists, tech enthusiasts, and media strategists.
-                </p>
-              </div>
-              <button className="text-[14px] font-semibold text-primary border-2 border-primary rounded btn-press px-6 py-3">
-                Work With Us
-              </button>
-            </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 stagger">
-              {teamMembers.map((member) => (
-                <div key={member.name} className="reveal bg-surface rounded-xl overflow-hidden card-lift border border-surface-variant group">
-                  <div className="w-full aspect-[0.84] relative overflow-hidden">
-                    <img
-                      src={member.image}
-                      alt={member.name}
-                      className="w-full h-full object-cover img-zoom"
-                      loading="lazy"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-                    <div className="absolute bottom-0 left-0 right-0 p-5">
-                      <h3 className="text-[20px] leading-[26px] font-bold text-white mb-1">{member.name}</h3>
-                      <p className="text-[13px] font-semibold text-secondary">{member.role}</p>
-                    </div>
-                  </div>
-                  <div className="p-5">
-                    <p className="text-[14px] leading-[22px] text-text-muted line-clamp-3">{member.bio}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-      </SectionReveal>
-
       {/* Achievements Section */}
       <SectionReveal delay={200}>
         <section className="py-24 md:py-32 bg-primary text-white">
           <div className="max-w-[1280px] mx-auto px-5 md:px-[64px]">
             <div className="text-center mb-16">
-              <h2 className="text-[32px] leading-[40px] font-bold text-white mb-4">Milestones &amp; Impact</h2>
+              <h2 className="text-[32px] leading-[40px] font-bold text-white mb-4" style={{ textAlign: 'center' }}>Milestones &amp; Impact</h2>
               <p className="text-[18px] leading-[28px] text-white opacity-90 max-w-2xl mx-auto">
                 Decades of excellence reflected in our reach and the impact we create on Nepal's tech scene.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 stagger">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
               {achievements.map((item) => (
-                <div key={item.label} className="reveal flex flex-col items-center text-center p-6 bg-white/10 rounded-xl border border-white/20 hover:bg-white/15 transition-all duration-300 hover:scale-105">
+                <div key={item.label} className="flex flex-col items-center text-center p-6 bg-white/10 rounded-xl border border-white/20 hover:bg-white/15 transition-all duration-300 hover:scale-105">
                   <span className="material-symbols-outlined text-4xl text-secondary mb-4 transition-transform duration-300 hover:scale-110">{item.icon}</span>
                   <h4 className="text-[36px] leading-[44px] font-extrabold text-secondary mb-2">{item.number}</h4>
                   <p className="text-[16px] leading-[24px] text-white">{item.label}</p>

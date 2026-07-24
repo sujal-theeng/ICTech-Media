@@ -23,20 +23,20 @@ const services = [
   },
   {
     icon: 'campaign',
-    title: 'Digital Marketing',
-    description: 'Strategic campaigns that drive results across social, search, and paid media channels.',
+    title: 'Digital Marketing & Media',
+    description: 'Engaging digital strategies that drive growth and enhance online presence.',
     image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80',
   },
   {
     icon: 'web',
-    title: 'Web Development',
-    description: 'Building modern, responsive websites and web applications tailored to your needs.',
+    title: 'Marketing & Advertising',
+    description: 'Innovative campaigns designed for maximum impact and audience engagement.',
     image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&q=80',
   },
   {
     icon: 'videocam',
-    title: 'Media Production',
-    description: 'Professional video production and multimedia solutions for brands looking to tell their story.',
+    title: 'Broadcasting & Production',
+    description: 'High-quality video production and broadcasting services for all your content needs.',
     image: 'https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=600&q=80',
   },
 ]
@@ -74,7 +74,7 @@ export default function Services() {
         {/* Page Header */}
         <SectionReveal>
           <section className="text-center max-w-3xl mx-auto mb-10 md:mb-16">
-            <h1 className="text-[36px] md:text-[48px] leading-[44px] md:leading-[56px] font-extrabold text-deep-charcoal mb-6 tracking-tight">Our Tech Services</h1>
+            <h1 className="text-[36px] md:text-[48px] leading-[44px] md:leading-[56px] font-extrabold text-deep-charcoal mb-6 tracking-tight" style={{ textAlign: 'center' }}>Our Tech Services</h1>
             <p className="text-[18px] leading-[28px] text-text-muted">
               Innovative, integrated, and expert technology solutions designed to scale your business. We bridge the gap between creative vision and technical execution.
             </p>

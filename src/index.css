@@ -36,6 +36,14 @@ body {
   overflow-x: hidden;
 }
 
+p, .text-text-muted {
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: left;
+}
+
 .material-symbols-outlined {
   font-variation-settings:
     'FILL' 0,

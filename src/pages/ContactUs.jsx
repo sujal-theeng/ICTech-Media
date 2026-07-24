@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { Helmet } from 'react-helmet-async'
 
 export default function ContactUs() {
@@ -13,6 +13,8 @@ export default function ContactUs() {
   })
   const [showToast, setShowToast] = useState(false)
   const [isClosing, setIsClosing] = useState(false)
+  const mapRef = useRef(null)
+  const mapInstanceRef = useRef(null)
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target
@@ -40,6 +42,16 @@ export default function ContactUs() {
       setTimeout(() => setShowToast(false), 300)
     }, 4500)
   }
+
+  useEffect(() => {
+    if (mapRef.current && !mapInstanceRef.current && typeof L !== 'undefined') {
+      const map = L.map(mapRef.current, { zoomControl: true, attributionControl: false }).setView([27.680185878643883, 85.33423052999738], 15)
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map)
+      L.marker([27.680185878643883, 85.33423052999738]).addTo(map)
+        .bindPopup('I C Tech Media').openPopup()
+      mapInstanceRef.current = map
+    }
+  }, [])
 
   return (
     <>
@@ -78,7 +90,7 @@ export default function ContactUs() {
       <main className="w-full max-w-[1280px] mx-auto px-5 md:px-[64px] py-[80px] md:py-[120px]">
         {/* Page Header */}
         <div className="mb-[80px] text-center max-w-3xl mx-auto">
-          <h1 className="text-[36px] md:text-[48px] leading-[44px] md:leading-[56px] font-extrabold text-primary mb-6 tracking-tight animate-fade-in">
+          <h1 className="text-[36px] md:text-[48px] leading-[44px] md:leading-[56px] font-extrabold text-primary mb-6 tracking-tight animate-fade-in" style={{ textAlign: 'center' }}>
             Let's start the conversation.
           </h1>
           <p className="text-[18px] leading-[28px] text-text-muted animate-fade-in" style={{ animationDelay: '0.15s' }}>
@@ -101,7 +113,7 @@ export default function ContactUs() {
                   </div>
                   <div>
                     <h3 className="text-[14px] font-semibold text-primary mb-1">Visit Us</h3>
-                    <a href="https://maps.google.com/?q=27.680185878643883,85.33423052999738" target="_blank" rel="noopener noreferrer" className="text-[16px] leading-[24px] text-text-muted hover:text-primary transition-colors duration-300">Kathmandu, Nepal</a>
+                    <a href="https://maps.google.com/?q=27.680185878643883,85.33423052999738" target="_blank" rel="noopener noreferrer" className="text-[16px] leading-[24px] text-text-muted hover:text-primary transition-colors duration-300">Shankhamul, Kathmandu, Nepal</a>
                   </div>
                 </div>
                 <div className="flex items-start gap-5 group">
@@ -111,8 +123,8 @@ export default function ContactUs() {
                   <div>
                     <h3 className="text-[14px] font-semibold text-primary mb-1">Call Us</h3>
                     <div className="text-[16px] leading-[24px] text-text-muted">
-                      <a href="tel:+9779761521785" className="block hover:text-primary transition-colors duration-300">+977 9761521785</a>
-                      <a href="tel:+9779804089157" className="block hover:text-primary transition-colors duration-300">+977 9804089157</a>
+                      <a href="tel:+977015315322" className="block hover:text-primary transition-colors duration-300">+977 01-5315322</a>
+                      <a href="tel:+9779801263601" className="block hover:text-primary transition-colors duration-300">+977 9801263601</a>
                     </div>
                   </div>
                 </div>
@@ -122,38 +134,27 @@ export default function ContactUs() {
                   </div>
                   <div>
                     <h3 className="text-[14px] font-semibold text-primary mb-1">Email Us</h3>
-                    <a href="mailto:admin@ictechmedia.com" className="text-[16px] leading-[24px] text-text-muted hover:text-primary transition-colors duration-300">admin@ictechmedia.com</a>
+                    <a href="mailto:info@ictech.com.np" className="text-[16px] leading-[24px] text-text-muted hover:text-primary transition-colors duration-300">info@ictech.com.np</a>
                   </div>
                 </div>
               </div>
             </div>
 
             {/* Map Card */}
-            <a
-              href="https://maps.google.com/?q=27.680185878643883,85.33423052999738"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block bg-surface rounded-xl overflow-hidden h-[320px] relative shadow-sm border border-surface-variant group"
-            >
-              <iframe
-                title="I C Tech Media Location"
-                src="https://www.openstreetmap.org/export/embed.html?bbox=85.330%2C27.677%2C85.338%2C27.683&layer=mapnik&marker=27.680185878643883%2C85.33423052999738"
-                className="w-full h-full border-0"
-                loading="lazy"
-              />
-              <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors duration-300 pointer-events-none" />
-              <div className="absolute bottom-4 left-4 bg-primary text-white px-4 py-2 rounded-lg text-[12px] font-semibold flex items-center gap-2 shadow-md pointer-events-none">
+            <div className="bg-surface rounded-xl overflow-hidden h-[320px] relative shadow-sm border border-surface-variant">
+              <div ref={mapRef} className="w-full h-full" style={{ zIndex: 1 }}></div>
+              <div className="absolute bottom-4 left-4 bg-primary text-white px-4 py-2 rounded-lg text-[12px] font-semibold flex items-center gap-2 shadow-md" style={{ zIndex: 1000 }}>
                 <span className="material-symbols-outlined text-[16px]">location_on</span>
-                Open in Google Maps
+                Shankhamul, Kathmandu
               </div>
-            </a>
+            </div>
           </div>
 
           {/* Enquiry Form Column */}
           <div className="lg:col-span-7 animate-fade-in" style={{ animationDelay: '0.35s' }}>
             <div className="bg-surface rounded-xl p-10 relative shadow-sm border border-surface-variant h-full">
               <div className="mb-10">
-                <h2 className="text-[24px] md:text-[32px] leading-[32px] md:leading-[40px] font-bold text-primary mb-3">Enquire About Our Services</h2>
+                <h2 className="text-[24px] md:text-[32px] leading-[32px] md:leading-[40px] font-bold text-primary mb-3" style={{ textAlign: 'center' }}>Enquire About Our Services</h2>
                 <p className="text-[16px] leading-[24px] text-text-muted">Fill out the form below and our team will get back to you shortly.</p>
               </div>
 

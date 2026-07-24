@@ -8,19 +8,7 @@ const slides = [
     image: 'https://images.unsplash.com/photo-1531482615713-2afd69097998?w=1920&q=80',
     label: 'Leading Tech Innovation in Nepal',
     title: 'Innovating the Future of Tech in Nepal',
-    description: 'I C Tech Media is at the forefront of Nepal\'s tech scene, driving innovation through events, media, and cutting-edge solutions.',
-  },
-  {
-    image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1920&q=80',
-    label: 'Empowering Digital Transformation',
-    title: 'Building Nepal\'s Tech Ecosystem',
-    description: 'Through strategic partnerships and community-driven projects, we are shaping the future of technology in Nepal.',
-  },
-  {
-    image: 'https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=1920&q=80',
-    label: 'Join Our Community',
-    title: 'Connecting Innovators Nationwide',
-    description: 'Be part of a growing network of tech professionals, entrepreneurs, and innovators across Nepal.',
+    description: 'I C Tech Pvt. Ltd. is a prominent tech media organization and digital initiative in Nepal. Living with ICT and its flagship event ICT Award contributes significantly to the growth and recognition of Nepal\'s ICT sector, fostering a culture of innovation and excellence in technology-driven initiatives. It works on various aspects and domains of digital transformation.',
   },
 ]
 
@@ -97,7 +85,7 @@ export default function Home() {
                   <span className="text-secondary text-[14px] font-semibold uppercase tracking-[0.2em] mb-5 block hero-slide-up hero-delay-1">
                     {slide.label}
                   </span>
-                  <h1 className="text-white text-[32px] md:text-[44px] leading-[40px] md:leading-[52px] font-extrabold tracking-tight max-w-3xl mb-5 hero-slide-up hero-delay-2">
+                  <h1 className="text-white text-[32px] md:text-[44px] leading-[40px] md:leading-[52px] font-extrabold tracking-tight max-w-3xl mb-5 hero-slide-up hero-delay-2" style={{ textAlign: 'left' }}>
                     {slide.title}
                   </h1>
                   <p className="text-white/80 text-[16px] md:text-[18px] leading-[28px] max-w-2xl mb-10 hero-slide-up hero-delay-3">
@@ -109,7 +97,7 @@ export default function Home() {
                       className="group bg-primary text-white px-8 py-3.5 rounded text-[14px] font-semibold btn-press shadow-md"
                     >
                       <span className="inline-flex items-center gap-2">
-                        Explore Services
+                        Explore our Services
                         <span className="material-symbols-outlined text-[18px] transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
                       </span>
                     </Link>
@@ -118,10 +106,11 @@ export default function Home() {
                       className="group bg-transparent border-2 border-secondary text-secondary px-8 py-3.5 rounded text-[14px] font-semibold btn-press shadow-sm hover:bg-secondary hover:text-deep-charcoal"
                     >
                       <span className="inline-flex items-center gap-2">
-                        View Our Work
+                        View our Work
                         <span className="material-symbols-outlined text-[18px] transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
                       </span>
                     </Link>
+
                   </div>
                 </>
               )}

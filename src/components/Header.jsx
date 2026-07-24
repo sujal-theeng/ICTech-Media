@@ -6,6 +6,7 @@ const navLinks = [
   { to: '/services', label: 'Services' },
   { to: '/initiatives', label: 'Initiatives' },
   { to: '/about', label: 'About Us' },
+  { to: '/contact', label: 'Contact Us' },
 ]
 
 export default function Header() {
@@ -35,13 +36,13 @@ export default function Header() {
       <div className="bg-deep-charcoal text-white py-2 hidden md:block border-b-4 border-secondary">
         <div className="max-w-[1280px] mx-auto px-[64px] flex justify-between items-center text-[12px] tracking-wide">
           <div className="flex items-center gap-6">
-            <a href="mailto:admin@ictechmedia.com" className="flex items-center gap-2 hover-underline hover:text-secondary transition-colors duration-300">
+            <a href="mailto:info@ictech.com.np" className="flex items-center gap-2 hover-underline hover:text-secondary transition-colors duration-300">
               <span className="material-symbols-outlined text-[16px] text-secondary">mail</span>
-              admin@ictechmedia.com
+              info@ictech.com.np
             </a>
-            <a href="tel:+9779804089157" className="flex items-center gap-2 hover-underline hover:text-secondary transition-colors duration-300">
+            <a href="tel:+977015315322" className="flex items-center gap-2 hover-underline hover:text-secondary transition-colors duration-300">
               <span className="material-symbols-outlined text-[16px] text-secondary">call</span>
-              +977 9804089157
+              +977 01-5315322
             </a>
           </div>
           <div className="flex items-center gap-4">
@@ -88,7 +89,7 @@ export default function Header() {
               onClick={() => handleLinkClick('/contact')}
               className={`bg-primary text-white px-6 py-2.5 rounded text-[14px] font-semibold btn-press shadow-sm hover:shadow-md ${clickedLink === '/contact' ? 'nav-click-animate' : ''}`}
             >
-              Connect Now
+              Get Started
             </Link>
           </div>
 
@@ -130,7 +131,7 @@ export default function Header() {
                 onClick={() => handleLinkClick('/contact')}
                 className={`mt-3 bg-primary text-white px-6 py-3 rounded text-[14px] font-semibold text-center btn-press ${clickedLink === '/contact' ? 'nav-click-animate' : ''}`}
               >
-                Connect Now
+                Get Started
               </Link>
             </nav>
           </div>
