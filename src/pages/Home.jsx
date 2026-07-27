@@ -205,11 +205,11 @@ export default function Home() {
                 { icon: 'event', title: 'Event Management', desc: 'Organizing world-class tech summits and conferences that bring together innovators and industry leaders.', image: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&q=80' },
                 { icon: 'palette', title: 'Branding Solutions', desc: 'Crafting unique brand identities and digital marketing strategies that resonate with your target audience.', image: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&q=80' },
                 { icon: 'insights', title: 'Technology Consultation', desc: 'Providing expert advice on digital infrastructure and emerging technologies to optimize your business operations.', image: 'https://images.unsplash.com/photo-1553877522-43269d4ea984?w=600&q=80' },
-                { icon: 'code', title: 'Web Development', desc: 'Building modern, responsive websites and web applications tailored to your business needs using the latest technologies.', image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&q=80' },
-                { icon: 'videocam', title: 'Media Production', desc: 'Professional video production, content creation, and multimedia solutions for brands looking to tell their story.', image: 'https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=600&q=80' },
-                { icon: 'dns', title: 'IT Infrastructure', desc: 'End-to-end IT infrastructure setup, cloud migration, and network management for seamless business operations.', image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&q=80' },
+                { icon: 'campaign', title: 'Digital Marketing & Media', desc: 'Engaging digital strategies that drive growth and enhance online presence.', image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80' },
+                { icon: 'web', title: 'Marketing & Advertising', desc: 'Innovative campaigns designed for maximum impact and audience engagement.', image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&q=80' },
+                { icon: 'videocam', title: 'Broadcasting & Production', desc: 'High-quality video production and broadcasting services for all your content needs.', image: 'https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=600&q=80' },
               ].map((service) => (
-                <div key={service.title} className="reveal bg-surface rounded-xl overflow-hidden border border-surface-container card-lift group flex flex-col h-full">
+                <div key={service.title} className="bg-surface rounded-xl overflow-hidden border border-surface-container card-lift group flex flex-col h-full">
                   <div className="aspect-[1.6] overflow-hidden relative">
                     <img src={service.image} alt={service.title} className="w-full h-full object-cover img-zoom" loading="lazy" />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
@@ -275,7 +275,7 @@ export default function Home() {
                   title: "The Future of AI in Nepal's Emerging Tech Economy",
                 },
               ].map((article) => (
-                <article key={article.title} className="reveal bg-surface rounded-xl overflow-hidden card-lift border border-surface-container group">
+                <article key={article.title} className="bg-surface rounded-xl overflow-hidden card-lift border border-surface-container group">
                   <div className="aspect-[1.33] relative overflow-hidden border-b-4 border-secondary">
                     <img src={article.image} alt={article.title} className="w-full h-full object-cover img-zoom" loading="lazy" />
                   </div>
