@@ -35,5 +35,8 @@
     "innovation"
   ],
   "author": "I C Tech Media Pvt. Ltd.",
-  "license": "UNLICENSED"
+  "license": "UNLICENSED",
+  "engines": {
+    "node": "24.x"
+  }
 }
