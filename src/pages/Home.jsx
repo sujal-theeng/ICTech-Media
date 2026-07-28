@@ -194,7 +194,7 @@ export default function Home() {
           <div className="max-w-[1280px] mx-auto px-5 md:px-[64px]">
             <div className="text-center max-w-3xl mx-auto mb-[80px]">
               <span className="text-primary text-[14px] font-semibold uppercase tracking-[0.2em] mb-4 block">Our Services</span>
-              <h2 className="text-deep-charcoal text-[32px] leading-[40px] font-bold mb-6">Comprehensive Tech Solutions</h2>
+              <h2 className="text-deep-charcoal text-[32px] leading-[40px] font-bold mb-6 text-center">Comprehensive Tech Solutions</h2>
               <p className="text-text-muted text-[18px] leading-[28px]">
                 We offer a wide range of services designed to support growth, digital presence, and strategic technology adoption in Nepal.
               </p>
