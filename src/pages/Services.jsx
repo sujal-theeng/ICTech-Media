@@ -92,12 +92,12 @@ export default function Services() {
                 <div className="aspect-[1.4] overflow-hidden">
                   <img src={service.image} alt={service.title} className="w-full h-full object-cover img-zoom" loading="lazy" />
                 </div>
-                <div className="p-6">
+                <div className="p-5 md:p-6">
                   <div className="flex items-center gap-3 mb-4">
-                    <div className="w-10 h-10 bg-surface-gray rounded-lg flex items-center justify-center">
+                    <div className="w-10 h-10 bg-surface-gray rounded-lg flex items-center justify-center flex-shrink-0">
                       <span className="material-symbols-outlined text-[20px] text-deep-charcoal">{service.icon}</span>
                     </div>
-                    <h3 className="text-[20px] leading-[28px] font-bold text-deep-charcoal">{service.title}</h3>
+                    <h3 className="text-[18px] md:text-[20px] leading-[24px] md:leading-[28px] font-bold text-deep-charcoal">{service.title}</h3>
                   </div>
                   <p className="text-[15px] leading-[24px] text-text-muted">{service.description}</p>
                 </div>
@@ -110,7 +110,7 @@ export default function Services() {
         <SectionReveal delay={200}>
           <section className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-16 items-center bg-surface-gray rounded-xl overflow-hidden">
             <div className="p-8 md:p-16">
-              <h2 className="text-[32px] leading-[40px] font-bold text-deep-charcoal mb-6">Empowering Your Digital Presence</h2>
+              <h2 className="text-[28px] md:text-[32px] leading-[36px] md:leading-[40px] font-bold text-deep-charcoal mb-6">Empowering Your Digital Presence</h2>
               <p className="text-[16px] leading-[24px] text-text-muted mb-8">
                 At I C Tech Media, we believe in a holistic approach to technology. Our services are designed not just to solve immediate problems, but to empower you to thrive in an ever-changing landscape. We work collaboratively with you to ensure your tech stack is a growth engine, not a bottleneck.
               </p>
@@ -140,11 +140,11 @@ export default function Services() {
             <img
               src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1200&q=80"
               alt="Tech team collaboration"
-              className="w-full h-[400px] object-cover"
+              className="w-full h-[300px] md:h-[400px] object-cover"
               loading="lazy"
             />
             <div className="absolute inset-0 bg-deep-charcoal/80 flex flex-col items-center justify-center text-center p-8">
-              <h2 className="text-[32px] leading-[40px] font-bold text-white mb-4">Ready to Elevate Your Tech?</h2>
+              <h2 className="text-[28px] md:text-[32px] leading-[36px] md:leading-[40px] font-bold text-white mb-4">Ready to Elevate Your Tech?</h2>
               <p className="text-[16px] leading-[24px] text-white/70 mb-8 max-w-2xl mx-auto">
                 Book a consultation with our technology experts to explore how I C Tech Media can help you achieve your digital goals.
               </p>

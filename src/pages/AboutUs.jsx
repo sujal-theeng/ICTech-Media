@@ -38,7 +38,7 @@ export default function AboutUs() {
       </Helmet>
 
       {/* Hero Section */}
-      <section className="bg-surface-gray py-24 md:py-32">
+      <section className="bg-surface-gray py-16 md:py-24 lg:py-32">
         <div className="max-w-[1280px] mx-auto px-5 md:px-[64px] grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
           <div className="flex flex-col gap-6">
             <h1 className="text-[32px] leading-[44px] md:leading-[56px] font-extrabold text-deep-charcoal tracking-tight">
@@ -49,7 +49,7 @@ export default function AboutUs() {
               Established in 2069 BS, I C Tech Media Pvt. Ltd. is Nepal's premier technology media, event management, and digital consultancy hub. Driven by a passion to foster entrepreneurship and bridge the gap between technology and society, we create dynamic platforms for academicians, industry professionals, startups, and students to collaborate, share knowledge, and shape the nation's digital ecosystem.
             </p>
           </div>
-          <div className="relative h-[400px] w-full rounded-xl overflow-hidden shadow-lg group">
+          <div className="relative h-[300px] md:h-[400px] w-full rounded-xl overflow-hidden shadow-lg group">
             <img
               src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80"
               alt="I C Tech Media office"
@@ -116,40 +116,40 @@ export default function AboutUs() {
             {/* Core Objectives */}
             <div className="mb-16">
               <span className="text-primary text-[14px] font-semibold uppercase tracking-[0.2em] mb-4 block">Core Objectives</span>
-              <h2 className="text-[32px] leading-[40px] font-bold text-deep-charcoal mb-8">Our Strategic Pillars</h2>
+              <h2 className="text-[28px] md:text-[32px] leading-[36px] md:leading-[40px] font-bold text-deep-charcoal mb-8">Our Strategic Pillars</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="flex gap-4 group">
-                  <span className="material-symbols-outlined text-primary text-[32px] transition-transform duration-300 group-hover:scale-110">emoji_events</span>
+                <div className="flex items-center gap-4 group">
+                  <span className="material-symbols-outlined text-primary text-[32px] transition-transform duration-300 group-hover:scale-110 flex-shrink-0">emoji_events</span>
                   <div>
-                    <h4 className="text-deep-charcoal text-[20px] font-bold mb-2 group-hover:text-primary transition-colors duration-300">Recognize & Honor Innovation</h4>
+                    <h4 className="text-deep-charcoal text-[18px] md:text-[20px] font-bold mb-2 group-hover:text-primary transition-colors duration-300">Recognize & Honor Innovation</h4>
                     <p className="text-text-muted text-[16px]">Acknowledge and celebrate outstanding achievements in the tech sector through national platforms like the annual ICT Award.</p>
                   </div>
                 </div>
-                <div className="flex gap-4 group">
-                  <span className="material-symbols-outlined text-primary text-[32px] transition-transform duration-300 group-hover:scale-110">rocket_launch</span>
+                <div className="flex items-center gap-4 group">
+                  <span className="material-symbols-outlined text-primary text-[32px] transition-transform duration-300 group-hover:scale-110 flex-shrink-0">rocket_launch</span>
                   <div>
-                    <h4 className="text-deep-charcoal text-[20px] font-bold mb-2 group-hover:text-primary transition-colors duration-300">Foster Entrepreneurship</h4>
+                    <h4 className="text-deep-charcoal text-[18px] md:text-[20px] font-bold mb-2 group-hover:text-primary transition-colors duration-300">Foster Entrepreneurship</h4>
                     <p className="text-text-muted text-[16px]">Drive youth innovation and regional investment by connecting startups, students, and investors through initiatives like the Startup & Idea Fest.</p>
                   </div>
                 </div>
-                <div className="flex gap-4 group">
-                  <span className="material-symbols-outlined text-primary text-[32px] transition-transform duration-300 group-hover:scale-110">school</span>
+                <div className="flex items-center gap-4 group">
+                  <span className="material-symbols-outlined text-primary text-[32px] transition-transform duration-300 group-hover:scale-110 flex-shrink-0">school</span>
                   <div>
-                    <h4 className="text-deep-charcoal text-[20px] font-bold mb-2 group-hover:text-primary transition-colors duration-300">Promote Tech Literacy & Awareness</h4>
+                    <h4 className="text-deep-charcoal text-[18px] md:text-[20px] font-bold mb-2 group-hover:text-primary transition-colors duration-300">Promote Tech Literacy & Awareness</h4>
                     <p className="text-text-muted text-[16px]">Educate and inform the public on emerging digital trends, ICT policies, and developments through multi-channel journalism under Living with ICT (Print, Digital, and Broadcast).</p>
                   </div>
                 </div>
-                <div className="flex gap-4 group">
-                  <span className="material-symbols-outlined text-primary text-[32px] transition-transform duration-300 group-hover:scale-110">diversity_3</span>
+                <div className="flex items-center gap-4 group">
+                  <span className="material-symbols-outlined text-primary text-[32px] transition-transform duration-300 group-hover:scale-110 flex-shrink-0">diversity_3</span>
                   <div>
-                    <h4 className="text-deep-charcoal text-[20px] font-bold mb-2 group-hover:text-primary transition-colors duration-300">Bridge the Digital Divide</h4>
+                    <h4 className="text-deep-charcoal text-[18px] md:text-[20px] font-bold mb-2 group-hover:text-primary transition-colors duration-300">Bridge the Digital Divide</h4>
                     <p className="text-text-muted text-[16px]">Promote digital inclusion and diversity through targeted capacity-building initiatives and provincial outreach programs.</p>
                   </div>
                 </div>
-                <div className="flex gap-4 group md:col-span-2">
-                  <span className="material-symbols-outlined text-primary text-[32px] transition-transform duration-300 group-hover:scale-110">campaign</span>
+                <div className="flex items-center gap-4 group md:col-span-2">
+                  <span className="material-symbols-outlined text-primary text-[32px] transition-transform duration-300 group-hover:scale-110 flex-shrink-0">campaign</span>
                   <div>
-                    <h4 className="text-deep-charcoal text-[20px] font-bold mb-2 group-hover:text-primary transition-colors duration-300">Deliver High-Impact Media & Event Services</h4>
+                    <h4 className="text-deep-charcoal text-[18px] md:text-[20px] font-bold mb-2 group-hover:text-primary transition-colors duration-300">Deliver High-Impact Media & Event Services</h4>
                     <p className="text-text-muted text-[16px]">Provide top-tier corporate event management, digital marketing, broadcasting, and tech consultation to help institutions and businesses thrive in the digital age.</p>
                   </div>
                 </div>
@@ -173,7 +173,7 @@ export default function AboutUs() {
                   </p>
                 </div>
               </div>
-              <div className="relative h-[400px] rounded-xl overflow-hidden shadow-lg">
+              <div className="relative h-[300px] md:h-[400px] rounded-xl overflow-hidden shadow-lg">
                 <img
                   src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80"
                   alt="I C Tech Media team working together"
@@ -182,7 +182,7 @@ export default function AboutUs() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <div className="grid grid-cols-4 gap-3">
+                  <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-3">
                     <div className="bg-white/20 backdrop-blur-sm rounded-lg p-3 text-center">
                       <span className="text-[20px] font-extrabold text-white block">2000</span>
                       <span className="text-[10px] text-white/70 uppercase">Founded</span>
@@ -209,10 +209,10 @@ export default function AboutUs() {
 
       {/* Achievements Section */}
       <SectionReveal delay={200}>
-        <section className="py-24 md:py-32 bg-primary text-white">
+        <section className="py-16 md:py-32 bg-primary text-white">
           <div className="max-w-[1280px] mx-auto px-5 md:px-[64px]">
             <div className="text-center mb-16">
-              <h2 className="text-[32px] leading-[40px] font-bold text-white mb-4" style={{ textAlign: 'center' }}>Milestones &amp; Impact</h2>
+              <h2 className="text-[28px] md:text-[32px] leading-[36px] md:leading-[40px] font-bold text-white mb-4" style={{ textAlign: 'center' }}>Milestones &amp; Impact</h2>
               <p className="text-[18px] leading-[28px] text-white opacity-90 max-w-2xl mx-auto">
                 Decades of excellence reflected in our reach and the impact we create on Nepal's tech scene.
               </p>
@@ -222,7 +222,7 @@ export default function AboutUs() {
               {achievements.map((item) => (
                 <div key={item.label} className="flex flex-col items-center text-center p-6 bg-white/10 rounded-xl border border-white/20 hover:bg-white/15 transition-all duration-300 hover:scale-105">
                   <span className="material-symbols-outlined text-4xl text-secondary mb-4 transition-transform duration-300 hover:scale-110">{item.icon}</span>
-                  <h4 className="text-[36px] leading-[44px] font-extrabold text-secondary mb-2">{item.number}</h4>
+                  <h4 className="text-[28px] md:text-[36px] leading-[36px] md:leading-[44px] font-extrabold text-secondary mb-2">{item.number}</h4>
                   <p className="text-[16px] leading-[24px] text-white">{item.label}</p>
                 </div>
               ))}

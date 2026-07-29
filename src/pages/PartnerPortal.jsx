@@ -66,7 +66,7 @@ export default function PartnerPortal() {
       </Helmet>
 
       {/* Hero */}
-      <section className="bg-deep-charcoal text-white py-[80px] md:py-[120px]">
+      <section className="bg-deep-charcoal text-white py-12 md:py-[80px] lg:py-[120px]">
         <div className="max-w-[1280px] mx-auto px-5 md:px-[64px] text-center">
           <span className="text-secondary text-[14px] font-semibold uppercase tracking-[0.2em] mb-4 block hero-slide-up hero-delay-1">Partner With Us</span>
           <h1 className="text-[36px] md:text-[48px] leading-[44px] md:leading-[56px] font-extrabold mb-6 tracking-tight hero-slide-up hero-delay-2">
@@ -83,15 +83,15 @@ export default function PartnerPortal() {
 
       {/* Benefits */}
       <SectionReveal>
-        <section className="py-[80px] md:py-[120px] bg-background">
+        <section className="py-12 md:py-[80px] lg:py-[120px] bg-background">
           <div className="max-w-[1280px] mx-auto px-5 md:px-[64px]">
-            <div className="text-center mb-16">
-              <h2 className="text-[32px] md:text-[40px] font-bold text-deep-charcoal mb-4">Why Partner With Us?</h2>
+            <div className="text-center mb-10 md:mb-16">
+              <h2 className="text-[28px] md:text-[32px] lg:text-[40px] font-bold text-deep-charcoal mb-4">Why Partner With Us?</h2>
               <p className="text-[18px] text-text-muted max-w-2xl mx-auto">We offer meaningful collaboration opportunities that align your brand with innovation.</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 stagger">
               {benefits.map((benefit) => (
-                <div key={benefit.title} className="reveal bg-surface rounded-xl p-8 border border-surface-variant card-lift group">
+                <div key={benefit.title} className="reveal bg-surface rounded-xl p-6 md:p-8 border border-surface-variant card-lift group">
                   <span className="material-symbols-outlined text-[40px] text-secondary mb-4 block transition-transform duration-300 group-hover:scale-110">{benefit.icon}</span>
                   <h3 className="text-[18px] font-bold text-deep-charcoal mb-3 transition-colors duration-300 group-hover:text-primary">{benefit.title}</h3>
                   <p className="text-[15px] text-text-muted leading-relaxed">{benefit.description}</p>
@@ -104,31 +104,31 @@ export default function PartnerPortal() {
 
       {/* Tiers */}
       <SectionReveal delay={100}>
-        <section id="tiers" className="py-[80px] md:py-[120px] bg-surface-gray">
+        <section id="tiers" className="py-12 md:py-[80px] lg:py-[120px] bg-surface-gray">
           <div className="max-w-[1280px] mx-auto px-5 md:px-[64px]">
-            <div className="text-center mb-16">
-              <h2 className="text-[32px] md:text-[40px] font-bold text-deep-charcoal mb-4">Partnership Tiers</h2>
+            <div className="text-center mb-10 md:mb-16">
+              <h2 className="text-[28px] md:text-[32px] lg:text-[40px] font-bold text-deep-charcoal mb-4">Partnership Tiers</h2>
               <p className="text-[18px] text-text-muted max-w-2xl mx-auto">Choose a tier that fits your goals and budget.</p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center overflow-hidden">
               {tiers.map((tier) => (
                 <div
                   key={tier.name}
-                  className={`reveal rounded-xl p-10 border-2 transition-all duration-300 ${
+                  className={`reveal rounded-xl p-6 md:p-10 border-2 transition-all duration-300 ${
                     tier.highlighted
-                      ? 'bg-primary text-white border-primary shadow-lg scale-105 z-10'
+                      ? 'bg-primary text-white border-primary shadow-lg md:scale-105 z-10'
                       : 'bg-surface border-surface-variant card-lift'
                   }`}
                 >
                   <h3 className={`text-[24px] font-bold mb-2 ${tier.highlighted ? 'text-white' : 'text-deep-charcoal'}`}>{tier.name}</h3>
                   <div className="mb-6">
-                    <span className={`text-[36px] font-extrabold ${tier.highlighted ? 'text-secondary' : 'text-primary'}`}>{tier.price}</span>
+                    <span className={`text-[28px] md:text-[36px] font-extrabold ${tier.highlighted ? 'text-secondary' : 'text-primary'}`}>{tier.price}</span>
                     <span className={`text-[14px] ${tier.highlighted ? 'text-white/70' : 'text-text-muted'}`}>{tier.period}</span>
                   </div>
                   <ul className="space-y-3 mb-8">
                     {tier.features.map((feature) => (
-                      <li key={feature} className="flex items-start gap-3">
-                        <span className={`material-symbols-outlined text-[20px] mt-0.5 ${tier.highlighted ? 'text-secondary' : 'text-primary'}`}>check_circle</span>
+                      <li key={feature} className="flex items-center gap-3">
+                        <span className={`material-symbols-outlined text-[18px] flex-shrink-0 ${tier.highlighted ? 'text-secondary' : 'text-primary'}`}>check_circle</span>
                         <span className={`text-[15px] ${tier.highlighted ? 'text-white/90' : 'text-text-muted'}`}>{feature}</span>
                       </li>
                     ))}
@@ -152,14 +152,14 @@ export default function PartnerPortal() {
 
       {/* Contact Form */}
       <SectionReveal delay={200}>
-        <section className="py-[80px] md:py-[120px] bg-background">
+        <section className="py-12 md:py-[80px] lg:py-[120px] bg-background">
           <div className="max-w-[1280px] mx-auto px-5 md:px-[64px]">
             <div className="max-w-2xl mx-auto">
-              <h2 className="text-[32px] md:text-[40px] font-bold text-deep-charcoal mb-4 text-center">Interested in Partnering?</h2>
+              <h2 className="text-[28px] md:text-[32px] lg:text-[40px] font-bold text-deep-charcoal mb-4 text-center">Interested in Partnering?</h2>
               <p className="text-[18px] text-text-muted mb-12 text-center">Fill out the form below and our partnerships team will reach out.</p>
 
               {submitted ? (
-                <div className="bg-surface rounded-xl p-12 border border-surface-variant text-center animate-fade-in">
+                <div className="bg-surface rounded-xl p-8 md:p-12 border border-surface-variant text-center animate-fade-in">
                   <span className="material-symbols-outlined text-[64px] text-primary mb-4 block">check_circle</span>
                   <h3 className="text-[24px] font-bold text-deep-charcoal mb-3">Thank You!</h3>
                   <p className="text-[16px] text-text-muted mb-6">We've received your inquiry. Our partnerships team will contact you within 2 business days.</p>
@@ -168,7 +168,7 @@ export default function PartnerPortal() {
                   </Link>
                 </div>
               ) : (
-                <form onSubmit={handleSubmit} className="bg-surface rounded-xl p-10 border border-surface-variant shadow-sm space-y-6">
+                <form onSubmit={handleSubmit} className="bg-surface rounded-xl p-6 md:p-10 border border-surface-variant shadow-sm space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="flex flex-col gap-2">
                       <label className="text-[14px] font-semibold text-primary" htmlFor="partner-name">Full Name *</label>

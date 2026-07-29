@@ -139,9 +139,9 @@ export default function Home() {
 
       {/* About Section */}
       <SectionReveal>
-        <section className="py-[80px] md:py-[120px] bg-background">
+        <section className="py-12 md:py-[80px] lg:py-[120px] bg-background">
           <div className="max-w-[1280px] mx-auto px-5 md:px-[64px]">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-[64px] items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-[64px] items-center">
               <div className="relative group">
                 <img
                   src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80"
@@ -157,20 +157,20 @@ export default function Home() {
 
               <div>
                 <span className="text-primary text-[14px] font-semibold uppercase tracking-[0.2em] mb-4 block">Our Core Values</span>
-                <h2 className="text-deep-charcoal text-[32px] leading-[40px] font-bold mb-6">Combining Innovation, Sustainability &amp; Efficiency</h2>
+                <h2 className="text-deep-charcoal text-[28px] md:text-[32px] leading-[36px] md:leading-[40px] font-bold mb-6">Combining Innovation, Sustainability &amp; Efficiency</h2>
                 <p className="text-text-muted text-[18px] leading-[28px] mb-8">
                   We believe in combining innovation, sustainability, and efficiency to create lasting impact in Nepal's technology landscape.
                 </p>
                 <div className="space-y-8 mb-10">
-                  <div className="flex gap-4 group">
-                    <span className="material-symbols-outlined text-primary text-[32px] transition-transform duration-300 group-hover:scale-110">lightbulb</span>
+                  <div className="flex items-center gap-4 group">
+                    <span className="material-symbols-outlined text-primary text-[32px] transition-transform duration-300 group-hover:scale-110 flex-shrink-0">lightbulb</span>
                     <div>
                       <h4 className="text-deep-charcoal text-[20px] font-bold mb-2 group-hover:text-primary transition-colors duration-300">Innovation First</h4>
                       <p className="text-text-muted text-[16px]">Supporting enterprises in their transition to sustainable digital practices through modern tech stacks.</p>
                     </div>
                   </div>
-                  <div className="flex gap-4 group">
-                    <span className="material-symbols-outlined text-primary text-[32px] transition-transform duration-300 group-hover:scale-110">handshake</span>
+                  <div className="flex items-center gap-4 group">
+                    <span className="material-symbols-outlined text-primary text-[32px] transition-transform duration-300 group-hover:scale-110 flex-shrink-0">handshake</span>
                     <div>
                       <h4 className="text-deep-charcoal text-[20px] font-bold mb-2 group-hover:text-primary transition-colors duration-300">Collaborative Spirit</h4>
                       <p className="text-text-muted text-[16px]">Enhancing innovation through strategic partnerships and community-driven projects.</p>
@@ -190,11 +190,11 @@ export default function Home() {
 
       {/* Services Grid Section */}
       <SectionReveal delay={100}>
-        <section className="py-[80px] md:py-[120px] bg-surface-gray">
+        <section className="py-12 md:py-[80px] lg:py-[120px] bg-surface-gray">
           <div className="max-w-[1280px] mx-auto px-5 md:px-[64px]">
             <div className="text-center max-w-3xl mx-auto mb-[80px]">
               <span className="text-primary text-[14px] font-semibold uppercase tracking-[0.2em] mb-4 block">Our Services</span>
-              <h2 className="text-deep-charcoal text-[32px] leading-[40px] font-bold mb-6 text-center">Comprehensive Tech Solutions</h2>
+              <h2 className="text-deep-charcoal text-[28px] md:text-[32px] leading-[36px] md:leading-[40px] font-bold mb-6 text-center">Comprehensive Tech Solutions</h2>
               <p className="text-text-muted text-[18px] leading-[28px]">
                 We offer a wide range of services designed to support growth, digital presence, and strategic technology adoption in Nepal.
               </p>
@@ -217,8 +217,8 @@ export default function Home() {
                       <span className="material-symbols-outlined text-[24px] text-deep-charcoal transition-colors duration-300 group-hover:text-secondary">{service.icon}</span>
                     </div>
                   </div>
-                  <div className="p-8 flex flex-col flex-grow">
-                    <h3 className="text-deep-charcoal text-[22px] font-bold mb-4 transition-colors duration-300 group-hover:text-primary">{service.title}</h3>
+                  <div className="p-5 md:p-8 flex flex-col flex-grow">
+                    <h3 className="text-deep-charcoal text-[20px] md:text-[22px] font-bold mb-4 transition-colors duration-300 group-hover:text-primary">{service.title}</h3>
                     <p className="text-text-muted text-[16px] leading-[24px] mb-8 flex-grow">{service.desc}</p>
                     <Link to="/services" className="text-primary text-[14px] font-semibold flex items-center gap-2 transition-all duration-300 group-hover:gap-3 mt-auto">
                       Read More <span className="material-symbols-outlined text-[18px] transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
@@ -242,12 +242,12 @@ export default function Home() {
 
       {/* News Section */}
       <SectionReveal delay={200}>
-        <section className="py-[80px] md:py-[120px] bg-background">
+        <section className="py-12 md:py-[80px] lg:py-[120px] bg-background">
           <div className="max-w-[1280px] mx-auto px-5 md:px-[64px]">
-            <div className="flex flex-col md:flex-row justify-between items-end mb-[80px] gap-6">
+            <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 md:mb-[80px] gap-6">
               <div className="max-w-2xl">
                 <span className="text-primary text-[14px] font-semibold uppercase tracking-[0.2em] mb-4 block">News &amp; Insights</span>
-                <h2 className="text-deep-charcoal text-[32px] leading-[40px] font-bold">Latest Updates from I C Tech</h2>
+                <h2 className="text-deep-charcoal text-[28px] md:text-[32px] leading-[36px] md:leading-[40px] font-bold">Latest Updates from I C Tech</h2>
               </div>
               <button className="bg-deep-charcoal text-secondary px-8 py-3.5 rounded text-[14px] font-semibold btn-press whitespace-nowrap shadow-sm">
                 More Articles
@@ -279,8 +279,8 @@ export default function Home() {
                   <div className="aspect-[1.33] relative overflow-hidden border-b-4 border-secondary">
                     <img src={article.image} alt={article.title} className="w-full h-full object-cover img-zoom" loading="lazy" />
                   </div>
-                  <div className="p-8">
-                    <div className="flex items-center gap-6 text-text-muted text-[12px] font-medium mb-4 uppercase tracking-wider">
+                   <div className="p-5 md:p-8">
+                    <div className="flex items-center gap-4 md:gap-6 text-text-muted text-[12px] font-medium mb-4 uppercase tracking-wider flex-wrap">
                       <span className="flex items-center gap-2">
                         <span className="material-symbols-outlined text-[16px] text-primary">calendar_today</span> {article.date}
                       </span>

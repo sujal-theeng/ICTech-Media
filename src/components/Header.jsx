@@ -37,17 +37,17 @@ export default function Header() {
         <div className="max-w-[1280px] mx-auto px-[64px] flex justify-between items-center text-[12px] tracking-wide">
           <div className="flex items-center gap-6">
             <a href="mailto:info@ictech.com.np" className="flex items-center gap-2 hover-underline hover:text-secondary transition-colors duration-300">
-              <span className="material-symbols-outlined text-[16px] text-secondary">mail</span>
+              <span className="material-symbols-outlined text-[16px] text-secondary leading-none align-middle">mail</span>
               info@ictech.com.np
             </a>
             <a href="tel:+977015315322" className="flex items-center gap-2 hover-underline hover:text-secondary transition-colors duration-300">
-              <span className="material-symbols-outlined text-[16px] text-secondary">call</span>
+              <span className="material-symbols-outlined text-[16px] text-secondary leading-none align-middle">call</span>
               +977 01-5315322
             </a>
           </div>
           <div className="flex items-center gap-4">
-            <a href="https://maps.google.com/?q=27.680185878643883,85.33423052999738" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 hover:text-secondary transition-colors duration-300">
-              <span className="material-symbols-outlined text-[16px]">location_on</span>
+            <a href="https://maps.google.com/?q=27.680185878643883,85.33423052999738" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover-underline hover:text-secondary transition-colors duration-300">
+              <span className="material-symbols-outlined text-[16px] leading-none align-middle">location_on</span>
               Shankhamul, Kathmandu
             </a>
           </div>

@@ -77,7 +77,7 @@ export default function Initiatives() {
       </Helmet>
 
       {/* Hero Section */}
-      <section className="relative w-full h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
+      <section className="relative w-full h-[50vh] md:h-[60vh] min-h-[400px] md:min-h-[500px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
             src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1920&q=80"
@@ -105,7 +105,7 @@ export default function Initiatives() {
                 className="inline-flex items-center gap-2 bg-secondary text-primary px-8 py-4 rounded-lg text-[14px] font-semibold btn-press shadow-lg"
               >
                 Explore Initiatives
-                <span className="material-symbols-outlined">arrow_downward</span>
+                <span className="material-symbols-outlined text-[18px]">arrow_downward</span>
               </a>
             </div>
           </div>
@@ -116,20 +116,20 @@ export default function Initiatives() {
       <SectionReveal>
         <section className="w-full bg-surface-gray py-16 border-y border-surface-variant/30">
           <div className="px-5 md:px-[64px] max-w-[1280px] mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center divide-y md:divide-y-0 md:divide-x divide-surface-variant/50">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 text-center divide-y md:divide-y-0 md:divide-x divide-surface-variant/50">
               <div className="flex flex-col items-center justify-center pt-8 md:pt-0">
-                <span className="material-symbols-outlined text-primary text-5xl mb-4">rocket_launch</span>
-                <h3 className="text-[48px] leading-[56px] font-extrabold text-deep-charcoal mb-2">25+</h3>
+                <span className="material-symbols-outlined text-primary text-4xl md:text-5xl mb-4">rocket_launch</span>
+                <h3 className="text-[36px] md:text-[48px] leading-[44px] md:leading-[56px] font-extrabold text-deep-charcoal mb-2">25+</h3>
                 <p className="text-[14px] font-semibold text-text-muted uppercase tracking-wider">Startup Showcases</p>
               </div>
               <div className="flex flex-col items-center justify-center pt-8 md:pt-0">
-                <span className="material-symbols-outlined text-primary text-5xl mb-4">code</span>
-                <h3 className="text-[48px] leading-[56px] font-extrabold text-deep-charcoal mb-2">5k+</h3>
+                <span className="material-symbols-outlined text-primary text-4xl md:text-5xl mb-4">code</span>
+                <h3 className="text-[36px] md:text-[48px] leading-[44px] md:leading-[56px] font-extrabold text-deep-charcoal mb-2">5k+</h3>
                 <p className="text-[14px] font-semibold text-text-muted uppercase tracking-wider">Developers Trained</p>
               </div>
               <div className="flex flex-col items-center justify-center pt-8 md:pt-0">
-                <span className="material-symbols-outlined text-primary text-5xl mb-4">workspace_premium</span>
-                <h3 className="text-[48px] leading-[56px] font-extrabold text-deep-charcoal mb-2">100+</h3>
+                <span className="material-symbols-outlined text-primary text-4xl md:text-5xl mb-4">workspace_premium</span>
+                <h3 className="text-[36px] md:text-[48px] leading-[44px] md:leading-[56px] font-extrabold text-deep-charcoal mb-2">100+</h3>
                 <p className="text-[14px] font-semibold text-text-muted uppercase tracking-wider">Awards Presented</p>
               </div>
             </div>
@@ -141,7 +141,7 @@ export default function Initiatives() {
       <section className="w-full py-16 bg-surface" id="initiatives">
         <div className="px-5 md:px-[64px] max-w-[1280px] mx-auto">
           <div className="text-center max-w-3xl mx-auto mb-10">
-            <h2 className="text-[32px] leading-[40px] font-bold text-deep-charcoal mb-6" style={{ textAlign: 'center' }}>Featured Initiatives</h2>
+            <h2 className="text-[28px] md:text-[32px] leading-[36px] md:leading-[40px] font-bold text-deep-charcoal mb-6" style={{ textAlign: 'center' }}>Featured Initiatives</h2>
             <p className="text-[18px] leading-[28px] text-text-muted text-center">
               We organize and support high-impact programs that drive the digital transformation of Nepal and celebrate technological excellence.
             </p>
@@ -149,12 +149,12 @@ export default function Initiatives() {
 
           <div className="flex flex-col gap-8">
             {initiatives.map((item) => (
-              <div key={item.title} className="bg-surface rounded-xl border border-surface-variant p-8 hover:shadow-lg transition-all duration-300">
-                <div className="flex items-start gap-4 mb-4">
-                  <span className="material-symbols-outlined text-primary text-[32px]">{item.icon}</span>
+              <div key={item.title} className="bg-surface rounded-xl border border-surface-variant p-5 md:p-8 hover:shadow-lg transition-all duration-300">
+                <div className="flex items-center gap-4 mb-4">
+                  <span className="material-symbols-outlined text-primary text-[28px] md:text-[32px] flex-shrink-0">{item.icon}</span>
                   <div>
                     <span className="text-[12px] font-semibold text-primary uppercase tracking-wider">{item.category}</span>
-                    <h3 className="text-[24px] leading-[32px] font-bold text-deep-charcoal">{item.title}</h3>
+                    <h3 className="text-[20px] md:text-[24px] leading-[28px] md:leading-[32px] font-bold text-deep-charcoal">{item.title}</h3>
                   </div>
                 </div>
                 <p className="text-[16px] leading-[28px] text-text-muted mb-4" style={{ textAlign: 'left' }}>{item.description}</p>
@@ -172,7 +172,7 @@ export default function Initiatives() {
       <section className="w-full py-16 bg-surface-gray">
         <div className="px-5 md:px-[64px] max-w-[1280px] mx-auto">
           <div className="text-center max-w-3xl mx-auto mb-10">
-            <h2 className="text-[32px] leading-[40px] font-bold text-deep-charcoal mb-6" style={{ textAlign: 'center' }}>Event Management Portfolio</h2>
+            <h2 className="text-[28px] md:text-[32px] leading-[36px] md:leading-[40px] font-bold text-deep-charcoal mb-6" style={{ textAlign: 'center' }}>Event Management Portfolio</h2>
             <p className="text-[18px] leading-[28px] text-text-muted text-center">
               Delivering world-class events that drive impact and inspire change across Nepal.
             </p>
@@ -180,12 +180,12 @@ export default function Initiatives() {
 
           <div className="flex flex-col gap-8">
             {eventPortfolio.map((item) => (
-              <div key={item.title} className="bg-surface rounded-xl border border-surface-variant p-8 hover:shadow-lg transition-all duration-300">
-                <div className="flex items-start gap-4 mb-4">
-                  <span className="material-symbols-outlined text-primary text-[32px]">{item.icon}</span>
+              <div key={item.title} className="bg-surface rounded-xl border border-surface-variant p-5 md:p-8 hover:shadow-lg transition-all duration-300">
+                <div className="flex items-center gap-4 mb-4">
+                  <span className="material-symbols-outlined text-primary text-[28px] md:text-[32px] flex-shrink-0">{item.icon}</span>
                   <div>
                     <span className="text-[12px] font-semibold text-primary uppercase tracking-wider">{item.category}</span>
-                    <h3 className="text-[24px] leading-[32px] font-bold text-deep-charcoal">{item.title}</h3>
+                    <h3 className="text-[20px] md:text-[24px] leading-[28px] md:leading-[32px] font-bold text-deep-charcoal">{item.title}</h3>
                   </div>
                 </div>
                 <p className="text-[16px] leading-[28px] text-text-muted mb-4" style={{ textAlign: 'left' }}>{item.description}</p>
@@ -205,12 +205,12 @@ export default function Initiatives() {
           <img
             src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&q=80"
             alt="Team collaboration"
-            className="w-full h-[400px] object-cover"
+            className="w-full h-[250px] md:h-[400px] object-cover"
             loading="lazy"
           />
           <div className="absolute inset-0 bg-primary/85 flex flex-col items-center justify-center text-center p-8">
-            <span className="material-symbols-outlined text-secondary text-5xl mb-6 transition-transform duration-300 hover:scale-110">ads_click</span>
-            <h2 className="text-[48px] leading-[56px] font-extrabold text-white mb-6 max-w-2xl mx-auto tracking-tight">Be Part of the Digital Revolution</h2>
+            <span className="material-symbols-outlined text-secondary text-4xl md:text-5xl mb-6 transition-transform duration-300 hover:scale-110">ads_click</span>
+            <h2 className="text-[28px] md:text-[36px] lg:text-[48px] leading-[36px] md:leading-[44px] lg:leading-[56px] font-extrabold text-white mb-6 max-w-2xl mx-auto tracking-tight">Be Part of the Digital Revolution</h2>
             <p className="text-[18px] leading-[28px] text-white/90 mb-10 max-w-2xl mx-auto">
               Whether you're a student, professional, or corporate partner, there's a place for you in our tech ecosystem. Let's build a smarter future together.
             </p>

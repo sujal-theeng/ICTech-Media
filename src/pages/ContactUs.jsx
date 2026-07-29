@@ -87,9 +87,9 @@ export default function ContactUs() {
         </div>
       )}
 
-      <main className="w-full max-w-[1280px] mx-auto px-5 md:px-[64px] py-[80px] md:py-[120px]">
+      <main className="w-full max-w-[1280px] mx-auto px-5 md:px-[64px] py-12 md:py-[80px] lg:py-[120px]">
         {/* Page Header */}
-        <div className="mb-[80px] text-center max-w-3xl mx-auto">
+        <div className="mb-10 md:mb-[80px] text-center max-w-3xl mx-auto">
           <h1 className="text-[36px] md:text-[48px] leading-[44px] md:leading-[56px] font-extrabold text-primary mb-6 tracking-tight animate-fade-in" style={{ textAlign: 'center' }}>
             Let's start the conversation.
           </h1>
@@ -101,9 +101,9 @@ export default function ContactUs() {
         {/* Bento Grid Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
           {/* Contact Info & Map Column */}
-          <div className="lg:col-span-5 flex flex-col gap-10 animate-fade-in" style={{ animationDelay: '0.25s' }}>
+          <div className="lg:col-span-5 flex flex-col gap-8 md:gap-10 animate-fade-in" style={{ animationDelay: '0.25s' }}>
             {/* Office Info Card */}
-            <div className="bg-surface rounded-xl p-10 relative shadow-sm border border-surface-variant card-lift">
+            <div className="bg-surface rounded-xl p-6 md:p-10 relative shadow-sm border border-surface-variant card-lift">
               <div className="absolute top-0 left-0 w-full h-1 bg-secondary transition-all duration-500 hover:w-full"></div>
               <h2 className="text-[24px] leading-[32px] font-bold text-primary mb-8">Our Main Office</h2>
               <div className="flex flex-col gap-8">
@@ -144,7 +144,7 @@ export default function ContactUs() {
             <div className="bg-surface rounded-xl overflow-hidden h-[320px] relative shadow-sm border border-surface-variant">
               <div ref={mapRef} className="w-full h-full" style={{ zIndex: 1 }}></div>
               <div className="absolute bottom-4 left-4 bg-primary text-white px-4 py-2 rounded-lg text-[12px] font-semibold flex items-center gap-2 shadow-md" style={{ zIndex: 1000 }}>
-                <span className="material-symbols-outlined text-[16px]">location_on</span>
+                <span className="material-symbols-outlined text-[16px] leading-none align-middle">location_on</span>
                 Shankhamul, Kathmandu
               </div>
             </div>
@@ -152,7 +152,7 @@ export default function ContactUs() {
 
           {/* Enquiry Form Column */}
           <div className="lg:col-span-7 animate-fade-in" style={{ animationDelay: '0.35s' }}>
-            <div className="bg-surface rounded-xl p-10 relative shadow-sm border border-surface-variant h-full">
+            <div className="bg-surface rounded-xl p-6 md:p-10 relative shadow-sm border border-surface-variant h-full">
               <div className="mb-10">
                 <h2 className="text-[24px] md:text-[32px] leading-[32px] md:leading-[40px] font-bold text-primary mb-3" style={{ textAlign: 'center' }}>Enquire About Our Services</h2>
                 <p className="text-[16px] leading-[24px] text-text-muted">Fill out the form below and our team will get back to you shortly.</p>
@@ -272,7 +272,7 @@ export default function ContactUs() {
                     className="w-full md:w-auto text-[14px] font-semibold bg-primary text-white px-8 py-4 rounded btn-press flex items-center justify-center gap-2 group"
                   >
                     Submit Enquiry
-                    <span className="material-symbols-outlined transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
+                    <span className="material-symbols-outlined text-[18px] transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
                   </button>
                 </div>
               </form>

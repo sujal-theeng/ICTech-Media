@@ -12,7 +12,7 @@ export default function NotFound() {
 
       <main className="min-h-[60vh] flex items-center justify-center px-5">
         <div className="text-center max-w-lg">
-          <span className="text-[120px] md:text-[160px] font-extrabold text-primary/20 leading-none block hero-slide-up hero-delay-1">404</span>
+          <span className="text-[80px] md:text-[120px] lg:text-[160px] font-extrabold text-primary/20 leading-none block hero-slide-up hero-delay-1">404</span>
           <h1 className="text-[32px] md:text-[40px] font-bold text-deep-charcoal -mt-8 mb-4 hero-slide-up hero-delay-2">Page Not Found</h1>
           <p className="text-[18px] text-text-muted mb-10 leading-relaxed hero-slide-up hero-delay-3">
             Sorry, the page you are looking for does not exist or has been moved.
