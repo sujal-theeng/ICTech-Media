@@ -23,8 +23,6 @@ const initiatives = [
     category: 'Entrepreneurship',
     title: 'Startup & Idea Fest',
     description: 'Startup and Idea Fest is Nepal\'s largest startup and innovation festival, bringing together young entrepreneurs, innovators, investors, and change-makers from across all provinces.',
-    cta: 'Visit Website',
-    link: 'https://startupfest.ictaward.org',
   },
 ]
 
@@ -158,10 +156,12 @@ export default function Initiatives() {
                   </div>
                 </div>
                 <p className="text-[16px] leading-[28px] text-text-muted mb-4" style={{ textAlign: 'left' }}>{item.description}</p>
-                <a className="inline-flex items-center gap-2 text-primary text-[14px] font-semibold hover:gap-3 transition-all duration-300" href={item.link} target="_blank" rel="noopener noreferrer">
-                  {item.cta}
-                  <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
-                </a>
+                {item.cta && (
+                  <a className="inline-flex items-center gap-2 text-primary text-[14px] font-semibold hover:gap-3 transition-all duration-300" href={item.link} target="_blank" rel="noopener noreferrer">
+                    {item.cta}
+                    <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
+                  </a>
+                )}
               </div>
             ))}
           </div>

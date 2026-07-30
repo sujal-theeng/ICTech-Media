@@ -156,29 +156,29 @@ export default function Home() {
               </div>
 
               <div>
-                <span className="text-primary text-[14px] font-semibold uppercase tracking-[0.2em] mb-4 block">Our Core Values</span>
-                <h2 className="text-deep-charcoal text-[28px] md:text-[32px] leading-[36px] md:leading-[40px] font-bold mb-6">Combining Innovation, Sustainability &amp; Efficiency</h2>
-                <p className="text-text-muted text-[18px] leading-[28px] mb-8">
+                <span className="text-primary text-[12px] md:text-[14px] font-semibold uppercase tracking-[0.2em] mb-3 md:mb-4 block">Our Core Values</span>
+                <h2 className="text-deep-charcoal text-[24px] md:text-[28px] lg:text-[32px] leading-[32px] md:leading-[36px] lg:leading-[40px] font-bold mb-4 md:mb-6">Combining Innovation, Sustainability &amp; Efficiency</h2>
+                <p className="text-text-muted text-[15px] md:text-[18px] leading-[24px] md:leading-[28px] mb-6 md:mb-8">
                   We believe in combining innovation, sustainability, and efficiency to create lasting impact in Nepal's technology landscape.
                 </p>
-                <div className="space-y-8 mb-10">
-                  <div className="flex items-center gap-4 group">
-                    <span className="material-symbols-outlined text-primary text-[32px] transition-transform duration-300 group-hover:scale-110 flex-shrink-0">lightbulb</span>
-                    <div>
-                      <h4 className="text-deep-charcoal text-[20px] font-bold mb-2 group-hover:text-primary transition-colors duration-300">Innovation First</h4>
-                      <p className="text-text-muted text-[16px]">Supporting enterprises in their transition to sustainable digital practices through modern tech stacks.</p>
+                <div className="space-y-6 md:space-y-8 mb-8 md:mb-10">
+                  <div className="group">
+                    <div className="flex items-center gap-2 md:gap-3 mb-1 md:mb-2">
+                      <span className="material-symbols-outlined text-primary text-[20px] md:text-[24px] transition-transform duration-300 group-hover:scale-110 flex-shrink-0">lightbulb</span>
+                      <h4 className="text-deep-charcoal text-[16px] md:text-[20px] font-bold group-hover:text-primary transition-colors duration-300">Innovation First</h4>
                     </div>
+                    <p className="text-text-muted text-[14px] md:text-[16px] pl-[28px] md:pl-[36px]">Supporting enterprises in their transition to sustainable digital practices through modern tech stacks.</p>
                   </div>
-                  <div className="flex items-center gap-4 group">
-                    <span className="material-symbols-outlined text-primary text-[32px] transition-transform duration-300 group-hover:scale-110 flex-shrink-0">handshake</span>
-                    <div>
-                      <h4 className="text-deep-charcoal text-[20px] font-bold mb-2 group-hover:text-primary transition-colors duration-300">Collaborative Spirit</h4>
-                      <p className="text-text-muted text-[16px]">Enhancing innovation through strategic partnerships and community-driven projects.</p>
+                  <div className="group">
+                    <div className="flex items-center gap-2 md:gap-3 mb-1 md:mb-2">
+                      <span className="material-symbols-outlined text-primary text-[20px] md:text-[24px] transition-transform duration-300 group-hover:scale-110 flex-shrink-0">handshake</span>
+                      <h4 className="text-deep-charcoal text-[16px] md:text-[20px] font-bold group-hover:text-primary transition-colors duration-300">Collaborative Spirit</h4>
                     </div>
+                    <p className="text-text-muted text-[14px] md:text-[16px] pl-[28px] md:pl-[36px]">Enhancing innovation through strategic partnerships and community-driven projects.</p>
                   </div>
                 </div>
-                <div className="border-l-4 border-secondary pl-6 py-2 bg-secondary-container rounded-r-lg p-4">
-                  <p className="text-deep-charcoal italic text-[16px]">
+                <div className="border-l-4 border-secondary pl-4 md:pl-6 py-2 bg-secondary-container rounded-r-lg p-3 md:p-4">
+                  <p className="text-deep-charcoal italic text-[14px] md:text-[16px]">
                     I C Tech Media serves as a catalyst for digital transformation in Nepal's business landscape. We provide comprehensive solutions that bridge the gap between traditional practices and modern technology.
                   </p>
                 </div>
@@ -194,7 +194,7 @@ export default function Home() {
           <div className="max-w-[1280px] mx-auto px-5 md:px-[64px]">
             <div className="text-center max-w-3xl mx-auto mb-[80px]">
               <span className="text-primary text-[14px] font-semibold uppercase tracking-[0.2em] mb-4 block">Our Services</span>
-              <h2 className="text-deep-charcoal text-[28px] md:text-[32px] leading-[36px] md:leading-[40px] font-bold mb-6 text-center">Comprehensive Tech Solutions</h2>
+              <h2 className="text-deep-charcoal text-[24px] md:text-[28px] lg:text-[32px] leading-[32px] md:leading-[36px] lg:leading-[40px] font-bold mb-4 md:mb-6">Comprehensive Tech Solutions</h2>
               <p className="text-text-muted text-[18px] leading-[28px]">
                 We offer a wide range of services designed to support growth, digital presence, and strategic technology adoption in Nepal.
               </p>
