@@ -32,16 +32,12 @@ const eventPortfolio = [
     category: 'High-Level Economic & Policy Summit',
     title: 'Koshi Investment Summit',
     description: 'The Koshi Investment Summit stands as a landmark economic event organized to drive socio-economic transformation, mobilize domestic and Foreign Direct Investment (FDI), and promote Public-Private Partnerships (PPP) within Koshi Province. As the event management partner, I C Tech Media Pvt. Ltd. delivered an end-to-end summit experience, handling delegate management, venue setup, high-profile panel moderation and media outreach.',
-    cta: 'View Details',
-    link: '#',
   },
   {
     icon: 'groups',
     category: 'Social Impact & Capacity Building',
     title: 'Girls in ICT Workshops and Conferences',
     description: 'Aligned with the global initiative by the International Telecommunication Union (ITU) and national regulators such as the Nepal Telecommunications Authority - NTA, the Girls in ICT Workshops & Conferences aim to bridge the digital gender divide in Nepal. I C Tech Media Pvt. Ltd. executed multi-tier regional programs across provincial hubs including Kathmandu, Itahari, Surkhet, Butwal, and Dhangadhi to inspire, educate, and empower young women to pursue leadership roles in STEM and ICT.',
-    cta: 'View Details',
-    link: '#',
   },
 ]
 
@@ -178,7 +174,7 @@ export default function Initiatives() {
             </p>
           </div>
 
-          <div className="flex flex-col gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {eventPortfolio.map((item) => (
               <div key={item.title} className="bg-surface rounded-xl border border-surface-variant p-5 md:p-8 hover:shadow-lg transition-all duration-300">
                 <div className="flex items-center gap-4 mb-4">
@@ -188,11 +184,7 @@ export default function Initiatives() {
                     <h3 className="text-[20px] md:text-[24px] leading-[28px] md:leading-[32px] font-bold text-deep-charcoal">{item.title}</h3>
                   </div>
                 </div>
-                <p className="text-[16px] leading-[28px] text-text-muted mb-4" style={{ textAlign: 'left' }}>{item.description}</p>
-                <a className="inline-flex items-center gap-2 text-primary text-[14px] font-semibold hover:gap-3 transition-all duration-300" href={item.link} target="_blank" rel="noopener noreferrer">
-                  {item.cta}
-                  <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
-                </a>
+                <p className="text-[16px] leading-[28px] text-text-muted">{item.description}</p>
               </div>
             ))}
           </div>

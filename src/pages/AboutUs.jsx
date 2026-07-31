@@ -118,36 +118,36 @@ export default function AboutUs() {
               <span className="text-primary text-[14px] font-semibold uppercase tracking-[0.2em] mb-4 block">Core Objectives</span>
               <h2 className="text-[28px] md:text-[32px] leading-[36px] md:leading-[40px] font-bold text-deep-charcoal mb-8">Our Strategic Pillars</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="flex items-center gap-4 group">
-                  <span className="material-symbols-outlined text-primary text-[32px] transition-transform duration-300 group-hover:scale-110 flex-shrink-0">emoji_events</span>
+                <div className="flex items-start gap-4 group">
+                  <span className="material-symbols-outlined text-primary text-[32px] transition-transform duration-300 group-hover:scale-110 flex-shrink-0 mt-1">emoji_events</span>
                   <div>
                     <h4 className="text-deep-charcoal text-[18px] md:text-[20px] font-bold mb-2 group-hover:text-primary transition-colors duration-300">Recognize & Honor Innovation</h4>
                     <p className="text-text-muted text-[16px]">Acknowledge and celebrate outstanding achievements in the tech sector through national platforms like the annual ICT Award.</p>
                   </div>
                 </div>
-                <div className="flex items-center gap-4 group">
-                  <span className="material-symbols-outlined text-primary text-[32px] transition-transform duration-300 group-hover:scale-110 flex-shrink-0">rocket_launch</span>
+                <div className="flex items-start gap-4 group">
+                  <span className="material-symbols-outlined text-primary text-[32px] transition-transform duration-300 group-hover:scale-110 flex-shrink-0 mt-1">rocket_launch</span>
                   <div>
                     <h4 className="text-deep-charcoal text-[18px] md:text-[20px] font-bold mb-2 group-hover:text-primary transition-colors duration-300">Foster Entrepreneurship</h4>
                     <p className="text-text-muted text-[16px]">Drive youth innovation and regional investment by connecting startups, students, and investors through initiatives like the Startup & Idea Fest.</p>
                   </div>
                 </div>
-                <div className="flex items-center gap-4 group">
-                  <span className="material-symbols-outlined text-primary text-[32px] transition-transform duration-300 group-hover:scale-110 flex-shrink-0">school</span>
+                <div className="flex items-start gap-4 group">
+                  <span className="material-symbols-outlined text-primary text-[32px] transition-transform duration-300 group-hover:scale-110 flex-shrink-0 mt-1">school</span>
                   <div>
                     <h4 className="text-deep-charcoal text-[18px] md:text-[20px] font-bold mb-2 group-hover:text-primary transition-colors duration-300">Promote Tech Literacy & Awareness</h4>
                     <p className="text-text-muted text-[16px]">Educate and inform the public on emerging digital trends, ICT policies, and developments through multi-channel journalism under Living with ICT (Print, Digital, and Broadcast).</p>
                   </div>
                 </div>
-                <div className="flex items-center gap-4 group">
-                  <span className="material-symbols-outlined text-primary text-[32px] transition-transform duration-300 group-hover:scale-110 flex-shrink-0">diversity_3</span>
+                <div className="flex items-start gap-4 group">
+                  <span className="material-symbols-outlined text-primary text-[32px] transition-transform duration-300 group-hover:scale-110 flex-shrink-0 mt-1">diversity_3</span>
                   <div>
                     <h4 className="text-deep-charcoal text-[18px] md:text-[20px] font-bold mb-2 group-hover:text-primary transition-colors duration-300">Bridge the Digital Divide</h4>
                     <p className="text-text-muted text-[16px]">Promote digital inclusion and diversity through targeted capacity-building initiatives and provincial outreach programs.</p>
                   </div>
                 </div>
-                <div className="flex items-center gap-4 group md:col-span-2">
-                  <span className="material-symbols-outlined text-primary text-[32px] transition-transform duration-300 group-hover:scale-110 flex-shrink-0">campaign</span>
+                <div className="flex items-start gap-4 group md:col-span-2">
+                  <span className="material-symbols-outlined text-primary text-[32px] transition-transform duration-300 group-hover:scale-110 flex-shrink-0 mt-1">campaign</span>
                   <div>
                     <h4 className="text-deep-charcoal text-[18px] md:text-[20px] font-bold mb-2 group-hover:text-primary transition-colors duration-300">Deliver High-Impact Media & Event Services</h4>
                     <p className="text-text-muted text-[16px]">Provide top-tier corporate event management, digital marketing, broadcasting, and tech consultation to help institutions and businesses thrive in the digital age.</p>

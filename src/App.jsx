@@ -12,7 +12,6 @@ const Initiatives = lazy(() => import('./pages/Initiatives'))
 const Services = lazy(() => import('./pages/Services'))
 const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy'))
 const TermsOfService = lazy(() => import('./pages/TermsOfService'))
-const PartnerPortal = lazy(() => import('./pages/PartnerPortal'))
 const NotFound = lazy(() => import('./pages/NotFound'))
 
 function ScrollToTop() {
@@ -48,7 +47,6 @@ function AnimatedRoutes() {
           <Route path="/services" element={<Services />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />
           <Route path="/terms" element={<TermsOfService />} />
-          <Route path="/partner" element={<PartnerPortal />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Suspense>

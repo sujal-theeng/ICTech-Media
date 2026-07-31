@@ -69,7 +69,7 @@ export default function PartnerPortal() {
       <section className="bg-deep-charcoal text-white py-12 md:py-[80px] lg:py-[120px]">
         <div className="max-w-[1280px] mx-auto px-5 md:px-[64px] text-center">
           <span className="text-secondary text-[14px] font-semibold uppercase tracking-[0.2em] mb-4 block hero-slide-up hero-delay-1">Partner With Us</span>
-          <h1 className="text-[36px] md:text-[48px] leading-[44px] md:leading-[56px] font-extrabold mb-6 tracking-tight hero-slide-up hero-delay-2">
+          <h1 className="text-[36px] md:text-[48px] leading-[44px] md:leading-[56px] font-extrabold mb-6 tracking-tight text-center hero-slide-up hero-delay-2">
             Grow Together with I C Tech Media
           </h1>
           <p className="text-white/70 text-[18px] leading-[28px] max-w-2xl mx-auto mb-10 hero-slide-up hero-delay-3">
